@@ -10,7 +10,7 @@ class FontAwesomePattern(Pattern):
         el = etree.Element('i')
         icon_name = m.group(2)
         if icon_name in icons:
-            el.attrib = {'class':'icon {0}'.format(icon_name)}
+            el.attrib = {'class':'fa {0}'.format(icon_name)}
             return el
         return m.string
 
