@@ -3,7 +3,7 @@ from markdown.inlinepatterns import Pattern
 from markdown.util import etree
 from icon_list import icons
 
-fontawesome_pattern = r':(icon-[-\w]+):'
+fontawesome_pattern = r':(fa-[-\w]+):'
 
 class FontAwesomePattern(Pattern):
     def handleMatch(self, m):
