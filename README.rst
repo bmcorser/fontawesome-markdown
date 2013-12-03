@@ -3,7 +3,7 @@ Font Awesome and Markdown, together!
 For when words aren't enough.
 -----------------------------
 
-A Markdown extension that looks for things like ``:icon-coffee:`` and replaces
+A Markdown extension that looks for things like ``:fa-coffee:`` and replaces
 them with the Font Awesome icon markup.
 
 Add a ``FontAwesomeExtension`` instance to your Markdown call and watch the
@@ -13,7 +13,7 @@ magic unfold::
     >>> from fontawesome_markdown import FontAwesomeExtension
 
     >>> markdown = Markdown(extensions=[FontAwesomeExtension()]
-    >>> markdown.convert('i ♥ :icon-coffee:')
-    <p>i ♥ <i class="icon icon-coffee"></i></p>
+    >>> markdown.convert('i ♥ :fa-coffee:')
+    <p>i ♥ <i class="fa fa-coffee"></i></p>
 
 Don't forget to make the Font Awesome assets available to your DOM!
