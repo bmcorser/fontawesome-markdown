@@ -5,7 +5,7 @@ def readme():
         return f.read()
 
 setup(name='fontawesome-markdown',
-      version='0.2',
+      version='0.2.1',
       description='Font Awesome support for Markdown',
       long_description=readme(),
       url='http://bmcorser.github.com/fontawesome-markdown',
