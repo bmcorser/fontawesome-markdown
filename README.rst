@@ -16,4 +16,4 @@ magic unfold::
     >>> markdown.convert('i ♥ :fa-coffee:')
     <p>i ♥ <i class="fa fa-coffee"></i></p>
 
-Don't forget to make the Font Awesome assets available to your DOM!
+Don't forget to make the Font Awesome assets available to your DOM, and you're done!
