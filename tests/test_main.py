@@ -13,6 +13,7 @@ def fa_markdown():
 def test_example(fa_markdown):
     assert fa_markdown.convert('i ♥ :fa-coffee:') == '<p>i ♥ <i class="fa fa-coffee"></i></p>'
 
+
 def test_unknown_raises(fa_markdown):
     unknown_icon = 'arglebargle'
     with pytest.raises(FontAwesomeException) as exc:

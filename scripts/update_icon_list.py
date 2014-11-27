@@ -13,6 +13,7 @@ def main():
     names_aliases = lambda I: itertools.chain([I['id']], I.get('aliases', list()))
     names = tuple(itertools.chain(*map(names_aliases, icons_list)))
     with open('../fontawesome_markdown/icon_list.py', 'w') as icons_list_py:
+        icons_list_py.write('from __future__ import unicode_literals\n')
         icons_list_py.write('icons = \\\n')
         pprint.pprint(names, icons_list_py)
 
