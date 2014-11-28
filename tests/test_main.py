@@ -11,7 +11,9 @@ def fa_markdown():
 
 
 def test_example(fa_markdown):
-    assert fa_markdown.convert('i ♥ :fa-coffee:') == '<p>i ♥ <i class="fa fa-coffee"></i></p>'
+    expected_markup = '<p>i ♥ <i class="fa fa-coffee"></i></p>'
+    assert fa_markdown.convert('i ♥ :fa-coffee:') == expected_markup
+
 
 def test_unknown_raises(fa_markdown):
     unknown_icon = 'arglebargle'

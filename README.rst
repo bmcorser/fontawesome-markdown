@@ -17,3 +17,5 @@ magic unfold::
     <p>i ♥ <i class="fa fa-coffee"></i></p>
 
 Don't forget to make the Font Awesome assets available to your DOM, and you're done!
+
+.. image:: https://travis-ci.org/bmcorser/fontawesome-markdown.svg

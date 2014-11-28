@@ -16,25 +16,30 @@ class PyTest(TestCommand):
         self.test_suite = True
 
     def run_tests(self):
-        #import here, cause outside the eggs aren't loaded
         import pytest
         errno = pytest.main(self.pytest_args)
         sys.exit(errno)
+
 
 def readme():
     with open('README.rst') as f:
         return f.read()
 
 setup(name='fontawesome-markdown',
-      version='0.2.3',
+      version='0.2.4',
       description='Font Awesome support for Markdown',
       long_description=readme(),
       url='http://bmcorser.github.com/fontawesome-markdown',
       author='bmcorser',
-      author_email='benmarshallcorser@gmail.com',
+      author_email='bmcorser@gmail.com',
       license='GPL',
       packages=['fontawesome_markdown'],
       install_requires=['markdown'],
       tests_require=['pytest'],
       cmdclass={'test': PyTest},
-      zip_safe=False)
+      zip_safe=False,
+      classifiers=[
+          'Programming Language :: Python :: 2.7',
+          'Programming Language :: Python :: 3.2',
+          'Programming Language :: Python :: 3.4',
+      ])
