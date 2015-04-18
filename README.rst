@@ -7,7 +7,9 @@ A Markdown extension that looks for things like ``:fa-coffee:`` and replaces
 them with the Font Awesome icon markup.
 
 Add a ``FontAwesomeExtension`` instance to your Markdown call and watch the
-magic unfold::
+magic unfold:
+
+.. code-block:: python
 
     >>> from markdown import Markdown
     >>> from fontawesome_markdown import FontAwesomeExtension
