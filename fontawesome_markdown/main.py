@@ -29,3 +29,7 @@ class FontAwesomeExtension(Extension):
     def extendMarkdown(self, md, md_globals):
         fontawesome = FontAwesomePattern(fontawesome_pattern)
         md.inlinePatterns.add('fontawesome', fontawesome, '<reference')
+
+
+def makeExtension(*args, **kwargs):
+    return FontAwesomeExtension(*args, **kwargs)

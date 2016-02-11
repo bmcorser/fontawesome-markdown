@@ -10,15 +10,14 @@ For when words aren't enough.
 A Markdown extension that looks for things like ``:fa-coffee:`` and replaces
 them with the Font Awesome icon markup.
 
-Add a ``FontAwesomeExtension`` instance to your Markdown call and watch the
+Add ``'fontawesome_markdown'`` to your Markdown call and watch the
 magic unfold:
 
 .. code-block:: python
 
     >>> from markdown import Markdown
-    >>> from fontawesome_markdown import FontAwesomeExtension
 
-    >>> markdown = Markdown(extensions=[FontAwesomeExtension()]
+    >>> markdown = Markdown(extensions=['fontawesome_markdown']
     >>> markdown.convert('i ♥ :fa-coffee:')
     <p>i ♥ <i class="fa fa-coffee"></i></p>
 

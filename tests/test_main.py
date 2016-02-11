@@ -5,9 +5,9 @@ from markdown import Markdown
 from fontawesome_markdown import FontAwesomeExtension, FontAwesomeException
 
 
-@pytest.fixture
-def fa_markdown():
-    return Markdown(extensions=[FontAwesomeExtension()])
+@pytest.fixture(params=[FontAwesomeExtension(), 'fontawesome_markdown'], ids=["import", "string"])
+def fa_markdown(request):
+    return Markdown(extensions=[request.param])
 
 
 def test_example(fa_markdown):
