@@ -3,8 +3,10 @@ from markdown.extensions import Extension
 from markdown.inlinepatterns import Pattern
 from markdown.util import etree
 from .icon_list import icons
+from .styleutil import prefix_to_style, style_to_prefix
+import json
 
-fontawesome_pattern = r':fa-([-\w]+):'
+fontawesome_pattern = r':(fa[bsrl]?)?\s?fa-([-\w]+):'
 
 
 class FontAwesomeException(Exception):
@@ -16,9 +18,25 @@ class FontAwesomePattern(Pattern):
     'Markdown pattern class for matching things that look like FA icons'
     def handleMatch(self, m):
         el = etree.Element('i')
-        icon_name = m.group(2)
+        prefix = m.group(2)
+        icon_name = m.group(3)
+        test = m.group(1)
         if icon_name in icons:
-            el.attrib = {'class': 'fa fa-{0}'.format(icon_name)}
+            styles = icons[icon_name]
+            if not prefix and 'solid' in styles:
+                # default prefix is fa
+                prefix = 'fa'
+            elif not prefix and 'solid' not in styles:
+                style = styles[0]
+                prefix = style_to_prefix(style)
+                if not prefix:
+                    raise FontAwesomeException("unknown style {0}".format(style))
+            
+            elif prefix and prefix_to_style(prefix) not in styles:
+                raise FontAwesomeException("{0} have not prefix '{1}'.\nAllowed prefix is {2} ".format(icon_name, prefix, styles))
+            
+            
+            el.attrib = {'class': '{0} fa-{1}'.format(prefix, icon_name)}
             return el
         message = "{0} isn't a FA icon I know about".format(icon_name)
         raise FontAwesomeException(message)

@@ -1,788 +1,3591 @@
 from __future__ import unicode_literals
-icons = \
-('glass',
- 'music',
- 'search',
- 'envelope-o',
- 'heart',
- 'star',
- 'star-o',
- 'user',
- 'film',
- 'th-large',
- 'th',
- 'th-list',
- 'check',
- 'times',
- 'remove',
- 'close',
- 'search-plus',
- 'search-minus',
- 'power-off',
- 'signal',
- 'cog',
- 'gear',
- 'trash-o',
- 'home',
- 'file-o',
- 'clock-o',
- 'road',
- 'download',
- 'arrow-circle-o-down',
- 'arrow-circle-o-up',
- 'inbox',
- 'play-circle-o',
- 'repeat',
- 'rotate-right',
- 'refresh',
- 'list-alt',
- 'lock',
- 'flag',
- 'headphones',
- 'volume-off',
- 'volume-down',
- 'volume-up',
- 'qrcode',
- 'barcode',
- 'tag',
- 'tags',
- 'book',
- 'bookmark',
- 'print',
- 'camera',
- 'font',
- 'bold',
- 'italic',
- 'text-height',
- 'text-width',
- 'align-left',
- 'align-center',
- 'align-right',
- 'align-justify',
- 'list',
- 'outdent',
- 'dedent',
- 'indent',
- 'video-camera',
- 'picture-o',
- 'photo',
- 'image',
- 'pencil',
- 'map-marker',
- 'adjust',
- 'tint',
- 'pencil-square-o',
- 'edit',
- 'share-square-o',
- 'check-square-o',
- 'arrows',
- 'step-backward',
- 'fast-backward',
- 'backward',
- 'play',
- 'pause',
- 'stop',
- 'forward',
- 'fast-forward',
- 'step-forward',
- 'eject',
- 'chevron-left',
- 'chevron-right',
- 'plus-circle',
- 'minus-circle',
- 'times-circle',
- 'check-circle',
- 'question-circle',
- 'info-circle',
- 'crosshairs',
- 'times-circle-o',
- 'check-circle-o',
- 'ban',
- 'arrow-left',
- 'arrow-right',
- 'arrow-up',
- 'arrow-down',
- 'share',
- 'mail-forward',
- 'expand',
- 'compress',
- 'plus',
- 'minus',
- 'asterisk',
- 'exclamation-circle',
- 'gift',
- 'leaf',
- 'fire',
- 'eye',
- 'eye-slash',
- 'exclamation-triangle',
- 'warning',
- 'plane',
- 'calendar',
- 'random',
- 'comment',
- 'magnet',
- 'chevron-up',
- 'chevron-down',
- 'retweet',
- 'shopping-cart',
- 'folder',
- 'folder-open',
- 'arrows-v',
- 'arrows-h',
- 'bar-chart',
- 'bar-chart-o',
- 'twitter-square',
- 'facebook-square',
- 'camera-retro',
- 'key',
- 'cogs',
- 'gears',
- 'comments',
- 'thumbs-o-up',
- 'thumbs-o-down',
- 'star-half',
- 'heart-o',
- 'sign-out',
- 'linkedin-square',
- 'thumb-tack',
- 'external-link',
- 'sign-in',
- 'trophy',
- 'github-square',
- 'upload',
- 'lemon-o',
- 'phone',
- 'square-o',
- 'bookmark-o',
- 'phone-square',
- 'twitter',
- 'facebook',
- 'facebook-f',
- 'github',
- 'unlock',
- 'credit-card',
- 'rss',
- 'feed',
- 'hdd-o',
- 'bullhorn',
- 'bell',
- 'certificate',
- 'hand-o-right',
- 'hand-o-left',
- 'hand-o-up',
- 'hand-o-down',
- 'arrow-circle-left',
- 'arrow-circle-right',
- 'arrow-circle-up',
- 'arrow-circle-down',
- 'globe',
- 'wrench',
- 'tasks',
- 'filter',
- 'briefcase',
- 'arrows-alt',
- 'users',
- 'group',
- 'link',
- 'chain',
- 'cloud',
- 'flask',
- 'scissors',
- 'cut',
- 'files-o',
- 'copy',
- 'paperclip',
- 'floppy-o',
- 'save',
- 'square',
- 'bars',
- 'navicon',
- 'reorder',
- 'list-ul',
- 'list-ol',
- 'strikethrough',
- 'underline',
- 'table',
- 'magic',
- 'truck',
- 'pinterest',
- 'pinterest-square',
- 'google-plus-square',
- 'google-plus',
- 'money',
- 'caret-down',
- 'caret-up',
- 'caret-left',
- 'caret-right',
- 'columns',
- 'sort',
- 'unsorted',
- 'sort-desc',
- 'sort-down',
- 'sort-asc',
- 'sort-up',
- 'envelope',
- 'linkedin',
- 'undo',
- 'rotate-left',
- 'gavel',
- 'legal',
- 'tachometer',
- 'dashboard',
- 'comment-o',
- 'comments-o',
- 'bolt',
- 'flash',
- 'sitemap',
- 'umbrella',
- 'clipboard',
- 'paste',
- 'lightbulb-o',
- 'exchange',
- 'cloud-download',
- 'cloud-upload',
- 'user-md',
- 'stethoscope',
- 'suitcase',
- 'bell-o',
- 'coffee',
- 'cutlery',
- 'file-text-o',
- 'building-o',
- 'hospital-o',
- 'ambulance',
- 'medkit',
- 'fighter-jet',
- 'beer',
- 'h-square',
- 'plus-square',
- 'angle-double-left',
- 'angle-double-right',
- 'angle-double-up',
- 'angle-double-down',
- 'angle-left',
- 'angle-right',
- 'angle-up',
- 'angle-down',
- 'desktop',
- 'laptop',
- 'tablet',
- 'mobile',
- 'mobile-phone',
- 'circle-o',
- 'quote-left',
- 'quote-right',
- 'spinner',
- 'circle',
- 'reply',
- 'mail-reply',
- 'github-alt',
- 'folder-o',
- 'folder-open-o',
- 'smile-o',
- 'frown-o',
- 'meh-o',
- 'gamepad',
- 'keyboard-o',
- 'flag-o',
- 'flag-checkered',
- 'terminal',
- 'code',
- 'reply-all',
- 'mail-reply-all',
- 'star-half-o',
- 'star-half-empty',
- 'star-half-full',
- 'location-arrow',
- 'crop',
- 'code-fork',
- 'chain-broken',
- 'unlink',
- 'question',
- 'info',
- 'exclamation',
- 'superscript',
- 'subscript',
- 'eraser',
- 'puzzle-piece',
- 'microphone',
- 'microphone-slash',
- 'shield',
- 'calendar-o',
- 'fire-extinguisher',
- 'rocket',
- 'maxcdn',
- 'chevron-circle-left',
- 'chevron-circle-right',
- 'chevron-circle-up',
- 'chevron-circle-down',
- 'html5',
- 'css3',
- 'anchor',
- 'unlock-alt',
- 'bullseye',
- 'ellipsis-h',
- 'ellipsis-v',
- 'rss-square',
- 'play-circle',
- 'ticket',
- 'minus-square',
- 'minus-square-o',
- 'level-up',
- 'level-down',
- 'check-square',
- 'pencil-square',
- 'external-link-square',
- 'share-square',
- 'compass',
- 'caret-square-o-down',
- 'toggle-down',
- 'caret-square-o-up',
- 'toggle-up',
- 'caret-square-o-right',
- 'toggle-right',
- 'eur',
- 'euro',
- 'gbp',
- 'usd',
- 'dollar',
- 'inr',
- 'rupee',
- 'jpy',
- 'cny',
- 'rmb',
- 'yen',
- 'rub',
- 'ruble',
- 'rouble',
- 'krw',
- 'won',
- 'btc',
- 'bitcoin',
- 'file',
- 'file-text',
- 'sort-alpha-asc',
- 'sort-alpha-desc',
- 'sort-amount-asc',
- 'sort-amount-desc',
- 'sort-numeric-asc',
- 'sort-numeric-desc',
- 'thumbs-up',
- 'thumbs-down',
- 'youtube-square',
- 'youtube',
- 'xing',
- 'xing-square',
- 'youtube-play',
- 'dropbox',
- 'stack-overflow',
- 'instagram',
- 'flickr',
- 'adn',
- 'bitbucket',
- 'bitbucket-square',
- 'tumblr',
- 'tumblr-square',
- 'long-arrow-down',
- 'long-arrow-up',
- 'long-arrow-left',
- 'long-arrow-right',
- 'apple',
- 'windows',
- 'android',
- 'linux',
- 'dribbble',
- 'skype',
- 'foursquare',
- 'trello',
- 'female',
- 'male',
- 'gratipay',
- 'gittip',
- 'sun-o',
- 'moon-o',
- 'archive',
- 'bug',
- 'vk',
- 'weibo',
- 'renren',
- 'pagelines',
- 'stack-exchange',
- 'arrow-circle-o-right',
- 'arrow-circle-o-left',
- 'caret-square-o-left',
- 'toggle-left',
- 'dot-circle-o',
- 'wheelchair',
- 'vimeo-square',
- 'try',
- 'turkish-lira',
- 'plus-square-o',
- 'space-shuttle',
- 'slack',
- 'envelope-square',
- 'wordpress',
- 'openid',
- 'university',
- 'institution',
- 'bank',
- 'graduation-cap',
- 'mortar-board',
- 'yahoo',
- 'google',
- 'reddit',
- 'reddit-square',
- 'stumbleupon-circle',
- 'stumbleupon',
- 'delicious',
- 'digg',
- 'pied-piper-pp',
- 'pied-piper-alt',
- 'drupal',
- 'joomla',
- 'language',
- 'fax',
- 'building',
- 'child',
- 'paw',
- 'spoon',
- 'cube',
- 'cubes',
- 'behance',
- 'behance-square',
- 'steam',
- 'steam-square',
- 'recycle',
- 'car',
- 'automobile',
- 'taxi',
- 'cab',
- 'tree',
- 'spotify',
- 'deviantart',
- 'soundcloud',
- 'database',
- 'file-pdf-o',
- 'file-word-o',
- 'file-excel-o',
- 'file-powerpoint-o',
- 'file-image-o',
- 'file-photo-o',
- 'file-picture-o',
- 'file-archive-o',
- 'file-zip-o',
- 'file-audio-o',
- 'file-sound-o',
- 'file-video-o',
- 'file-movie-o',
- 'file-code-o',
- 'vine',
- 'codepen',
- 'jsfiddle',
- 'life-ring',
- 'life-bouy',
- 'life-buoy',
- 'life-saver',
- 'support',
- 'circle-o-notch',
- 'rebel',
- 'ra',
- 'resistance',
- 'empire',
- 'ge',
- 'git-square',
- 'git',
- 'hacker-news',
- 'y-combinator-square',
- 'yc-square',
- 'tencent-weibo',
- 'qq',
- 'weixin',
- 'wechat',
- 'paper-plane',
- 'send',
- 'paper-plane-o',
- 'send-o',
- 'history',
- 'circle-thin',
- 'header',
- 'paragraph',
- 'sliders',
- 'share-alt',
- 'share-alt-square',
- 'bomb',
- 'futbol-o',
- 'soccer-ball-o',
- 'tty',
- 'binoculars',
- 'plug',
- 'slideshare',
- 'twitch',
- 'yelp',
- 'newspaper-o',
- 'wifi',
- 'calculator',
- 'paypal',
- 'google-wallet',
- 'cc-visa',
- 'cc-mastercard',
- 'cc-discover',
- 'cc-amex',
- 'cc-paypal',
- 'cc-stripe',
- 'bell-slash',
- 'bell-slash-o',
- 'trash',
- 'copyright',
- 'at',
- 'eyedropper',
- 'paint-brush',
- 'birthday-cake',
- 'area-chart',
- 'pie-chart',
- 'line-chart',
- 'lastfm',
- 'lastfm-square',
- 'toggle-off',
- 'toggle-on',
- 'bicycle',
- 'bus',
- 'ioxhost',
- 'angellist',
- 'cc',
- 'ils',
- 'shekel',
- 'sheqel',
- 'meanpath',
- 'buysellads',
- 'connectdevelop',
- 'dashcube',
- 'forumbee',
- 'leanpub',
- 'sellsy',
- 'shirtsinbulk',
- 'simplybuilt',
- 'skyatlas',
- 'cart-plus',
- 'cart-arrow-down',
- 'diamond',
- 'ship',
- 'user-secret',
- 'motorcycle',
- 'street-view',
- 'heartbeat',
- 'venus',
- 'mars',
- 'mercury',
- 'transgender',
- 'intersex',
- 'transgender-alt',
- 'venus-double',
- 'mars-double',
- 'venus-mars',
- 'mars-stroke',
- 'mars-stroke-v',
- 'mars-stroke-h',
- 'neuter',
- 'genderless',
- 'facebook-official',
- 'pinterest-p',
- 'whatsapp',
- 'server',
- 'user-plus',
- 'user-times',
- 'bed',
- 'hotel',
- 'viacoin',
- 'train',
- 'subway',
- 'medium',
- 'y-combinator',
- 'yc',
- 'optin-monster',
- 'opencart',
- 'expeditedssl',
- 'battery-full',
- 'battery-4',
- 'battery',
- 'battery-three-quarters',
- 'battery-3',
- 'battery-half',
- 'battery-2',
- 'battery-quarter',
- 'battery-1',
- 'battery-empty',
- 'battery-0',
- 'mouse-pointer',
- 'i-cursor',
- 'object-group',
- 'object-ungroup',
- 'sticky-note',
- 'sticky-note-o',
- 'cc-jcb',
- 'cc-diners-club',
- 'clone',
- 'balance-scale',
- 'hourglass-o',
- 'hourglass-start',
- 'hourglass-1',
- 'hourglass-half',
- 'hourglass-2',
- 'hourglass-end',
- 'hourglass-3',
- 'hourglass',
- 'hand-rock-o',
- 'hand-grab-o',
- 'hand-paper-o',
- 'hand-stop-o',
- 'hand-scissors-o',
- 'hand-lizard-o',
- 'hand-spock-o',
- 'hand-pointer-o',
- 'hand-peace-o',
- 'trademark',
- 'registered',
- 'creative-commons',
- 'gg',
- 'gg-circle',
- 'tripadvisor',
- 'odnoklassniki',
- 'odnoklassniki-square',
- 'get-pocket',
- 'wikipedia-w',
- 'safari',
- 'chrome',
- 'firefox',
- 'opera',
- 'internet-explorer',
- 'television',
- 'tv',
- 'contao',
- '500px',
- 'amazon',
- 'calendar-plus-o',
- 'calendar-minus-o',
- 'calendar-times-o',
- 'calendar-check-o',
- 'industry',
- 'map-pin',
- 'map-signs',
- 'map-o',
- 'map',
- 'commenting',
- 'commenting-o',
- 'houzz',
- 'vimeo',
- 'black-tie',
- 'fonticons',
- 'reddit-alien',
- 'edge',
- 'credit-card-alt',
- 'codiepie',
- 'modx',
- 'fort-awesome',
- 'usb',
- 'product-hunt',
- 'mixcloud',
- 'scribd',
- 'pause-circle',
- 'pause-circle-o',
- 'stop-circle',
- 'stop-circle-o',
- 'shopping-bag',
- 'shopping-basket',
- 'hashtag',
- 'bluetooth',
- 'bluetooth-b',
- 'percent',
- 'gitlab',
- 'wpbeginner',
- 'wpforms',
- 'envira',
- 'universal-access',
- 'wheelchair-alt',
- 'question-circle-o',
- 'blind',
- 'audio-description',
- 'volume-control-phone',
- 'braille',
- 'assistive-listening-systems',
- 'american-sign-language-interpreting',
- 'asl-interpreting',
- 'deaf',
- 'deafness',
- 'hard-of-hearing',
- 'glide',
- 'glide-g',
- 'sign-language',
- 'signing',
- 'low-vision',
- 'viadeo',
- 'viadeo-square',
- 'snapchat',
- 'snapchat-ghost',
- 'snapchat-square',
- 'pied-piper',
- 'first-order',
- 'yoast',
- 'themeisle',
- 'google-plus-official',
- 'google-plus-circle',
- 'font-awesome',
- 'fa',
- 'handshake-o',
- 'envelope-open',
- 'envelope-open-o',
- 'linode',
- 'address-book',
- 'address-book-o',
- 'address-card',
- 'vcard',
- 'address-card-o',
- 'vcard-o',
- 'user-circle',
- 'user-circle-o',
- 'user-o',
- 'id-badge',
- 'id-card',
- 'drivers-license',
- 'id-card-o',
- 'drivers-license-o',
- 'quora',
- 'free-code-camp',
- 'telegram',
- 'thermometer-full',
- 'thermometer-4',
- 'thermometer',
- 'thermometer-three-quarters',
- 'thermometer-3',
- 'thermometer-half',
- 'thermometer-2',
- 'thermometer-quarter',
- 'thermometer-1',
- 'thermometer-empty',
- 'thermometer-0',
- 'shower',
- 'bath',
- 'bathtub',
- 's15',
- 'podcast',
- 'window-maximize',
- 'window-minimize',
- 'window-restore',
- 'window-close',
- 'times-rectangle',
- 'window-close-o',
- 'times-rectangle-o',
- 'bandcamp',
- 'grav',
- 'etsy',
- 'imdb',
- 'ravelry',
- 'eercast',
- 'microchip',
- 'snowflake-o',
- 'superpowers',
- 'wpexplorer',
- 'meetup')
+icons = {
+  "500px": [
+    "brands"
+  ],
+  "accessible-icon": [
+    "brands"
+  ],
+  "accusoft": [
+    "brands"
+  ],
+  "address-book": [
+    "solid",
+    "regular"
+  ],
+  "address-card": [
+    "solid",
+    "regular"
+  ],
+  "adjust": [
+    "solid"
+  ],
+  "adn": [
+    "brands"
+  ],
+  "adversal": [
+    "brands"
+  ],
+  "affiliatetheme": [
+    "brands"
+  ],
+  "air-freshener": [
+    "solid"
+  ],
+  "algolia": [
+    "brands"
+  ],
+  "align-center": [
+    "solid"
+  ],
+  "align-justify": [
+    "solid"
+  ],
+  "align-left": [
+    "solid"
+  ],
+  "align-right": [
+    "solid"
+  ],
+  "allergies": [
+    "solid"
+  ],
+  "amazon": [
+    "brands"
+  ],
+  "amazon-pay": [
+    "brands"
+  ],
+  "ambulance": [
+    "solid"
+  ],
+  "american-sign-language-interpreting": [
+    "solid"
+  ],
+  "amilia": [
+    "brands"
+  ],
+  "anchor": [
+    "solid"
+  ],
+  "android": [
+    "brands"
+  ],
+  "angellist": [
+    "brands"
+  ],
+  "angle-double-down": [
+    "solid"
+  ],
+  "angle-double-left": [
+    "solid"
+  ],
+  "angle-double-right": [
+    "solid"
+  ],
+  "angle-double-up": [
+    "solid"
+  ],
+  "angle-down": [
+    "solid"
+  ],
+  "angle-left": [
+    "solid"
+  ],
+  "angle-right": [
+    "solid"
+  ],
+  "angle-up": [
+    "solid"
+  ],
+  "angry": [
+    "solid",
+    "regular"
+  ],
+  "angrycreative": [
+    "brands"
+  ],
+  "angular": [
+    "brands"
+  ],
+  "app-store": [
+    "brands"
+  ],
+  "app-store-ios": [
+    "brands"
+  ],
+  "apper": [
+    "brands"
+  ],
+  "apple": [
+    "brands"
+  ],
+  "apple-alt": [
+    "solid"
+  ],
+  "apple-pay": [
+    "brands"
+  ],
+  "archive": [
+    "solid"
+  ],
+  "archway": [
+    "solid"
+  ],
+  "arrow-alt-circle-down": [
+    "solid",
+    "regular"
+  ],
+  "arrow-alt-circle-left": [
+    "solid",
+    "regular"
+  ],
+  "arrow-alt-circle-right": [
+    "solid",
+    "regular"
+  ],
+  "arrow-alt-circle-up": [
+    "solid",
+    "regular"
+  ],
+  "arrow-circle-down": [
+    "solid"
+  ],
+  "arrow-circle-left": [
+    "solid"
+  ],
+  "arrow-circle-right": [
+    "solid"
+  ],
+  "arrow-circle-up": [
+    "solid"
+  ],
+  "arrow-down": [
+    "solid"
+  ],
+  "arrow-left": [
+    "solid"
+  ],
+  "arrow-right": [
+    "solid"
+  ],
+  "arrow-up": [
+    "solid"
+  ],
+  "arrows-alt": [
+    "solid"
+  ],
+  "arrows-alt-h": [
+    "solid"
+  ],
+  "arrows-alt-v": [
+    "solid"
+  ],
+  "assistive-listening-systems": [
+    "solid"
+  ],
+  "asterisk": [
+    "solid"
+  ],
+  "asymmetrik": [
+    "brands"
+  ],
+  "at": [
+    "solid"
+  ],
+  "atlas": [
+    "solid"
+  ],
+  "atom": [
+    "solid"
+  ],
+  "audible": [
+    "brands"
+  ],
+  "audio-description": [
+    "solid"
+  ],
+  "autoprefixer": [
+    "brands"
+  ],
+  "avianex": [
+    "brands"
+  ],
+  "aviato": [
+    "brands"
+  ],
+  "award": [
+    "solid"
+  ],
+  "aws": [
+    "brands"
+  ],
+  "backspace": [
+    "solid"
+  ],
+  "backward": [
+    "solid"
+  ],
+  "balance-scale": [
+    "solid"
+  ],
+  "ban": [
+    "solid"
+  ],
+  "band-aid": [
+    "solid"
+  ],
+  "bandcamp": [
+    "brands"
+  ],
+  "barcode": [
+    "solid"
+  ],
+  "bars": [
+    "solid"
+  ],
+  "baseball-ball": [
+    "solid"
+  ],
+  "basketball-ball": [
+    "solid"
+  ],
+  "bath": [
+    "solid"
+  ],
+  "battery-empty": [
+    "solid"
+  ],
+  "battery-full": [
+    "solid"
+  ],
+  "battery-half": [
+    "solid"
+  ],
+  "battery-quarter": [
+    "solid"
+  ],
+  "battery-three-quarters": [
+    "solid"
+  ],
+  "bed": [
+    "solid"
+  ],
+  "beer": [
+    "solid"
+  ],
+  "behance": [
+    "brands"
+  ],
+  "behance-square": [
+    "brands"
+  ],
+  "bell": [
+    "solid",
+    "regular"
+  ],
+  "bell-slash": [
+    "solid",
+    "regular"
+  ],
+  "bezier-curve": [
+    "solid"
+  ],
+  "bicycle": [
+    "solid"
+  ],
+  "bimobject": [
+    "brands"
+  ],
+  "binoculars": [
+    "solid"
+  ],
+  "birthday-cake": [
+    "solid"
+  ],
+  "bitbucket": [
+    "brands"
+  ],
+  "bitcoin": [
+    "brands"
+  ],
+  "bity": [
+    "brands"
+  ],
+  "black-tie": [
+    "brands"
+  ],
+  "blackberry": [
+    "brands"
+  ],
+  "blender": [
+    "solid"
+  ],
+  "blind": [
+    "solid"
+  ],
+  "blogger": [
+    "brands"
+  ],
+  "blogger-b": [
+    "brands"
+  ],
+  "bluetooth": [
+    "brands"
+  ],
+  "bluetooth-b": [
+    "brands"
+  ],
+  "bold": [
+    "solid"
+  ],
+  "bolt": [
+    "solid"
+  ],
+  "bomb": [
+    "solid"
+  ],
+  "bone": [
+    "solid"
+  ],
+  "bong": [
+    "solid"
+  ],
+  "book": [
+    "solid"
+  ],
+  "book-open": [
+    "solid"
+  ],
+  "book-reader": [
+    "solid"
+  ],
+  "bookmark": [
+    "solid",
+    "regular"
+  ],
+  "bowling-ball": [
+    "solid"
+  ],
+  "box": [
+    "solid"
+  ],
+  "box-open": [
+    "solid"
+  ],
+  "boxes": [
+    "solid"
+  ],
+  "braille": [
+    "solid"
+  ],
+  "brain": [
+    "solid"
+  ],
+  "briefcase": [
+    "solid"
+  ],
+  "briefcase-medical": [
+    "solid"
+  ],
+  "broadcast-tower": [
+    "solid"
+  ],
+  "broom": [
+    "solid"
+  ],
+  "brush": [
+    "solid"
+  ],
+  "btc": [
+    "brands"
+  ],
+  "bug": [
+    "solid"
+  ],
+  "building": [
+    "solid",
+    "regular"
+  ],
+  "bullhorn": [
+    "solid"
+  ],
+  "bullseye": [
+    "solid"
+  ],
+  "burn": [
+    "solid"
+  ],
+  "buromobelexperte": [
+    "brands"
+  ],
+  "bus": [
+    "solid"
+  ],
+  "bus-alt": [
+    "solid"
+  ],
+  "buysellads": [
+    "brands"
+  ],
+  "calculator": [
+    "solid"
+  ],
+  "calendar": [
+    "solid",
+    "regular"
+  ],
+  "calendar-alt": [
+    "solid",
+    "regular"
+  ],
+  "calendar-check": [
+    "solid",
+    "regular"
+  ],
+  "calendar-minus": [
+    "solid",
+    "regular"
+  ],
+  "calendar-plus": [
+    "solid",
+    "regular"
+  ],
+  "calendar-times": [
+    "solid",
+    "regular"
+  ],
+  "camera": [
+    "solid"
+  ],
+  "camera-retro": [
+    "solid"
+  ],
+  "cannabis": [
+    "solid"
+  ],
+  "capsules": [
+    "solid"
+  ],
+  "car": [
+    "solid"
+  ],
+  "car-alt": [
+    "solid"
+  ],
+  "car-battery": [
+    "solid"
+  ],
+  "car-crash": [
+    "solid"
+  ],
+  "car-side": [
+    "solid"
+  ],
+  "caret-down": [
+    "solid"
+  ],
+  "caret-left": [
+    "solid"
+  ],
+  "caret-right": [
+    "solid"
+  ],
+  "caret-square-down": [
+    "solid",
+    "regular"
+  ],
+  "caret-square-left": [
+    "solid",
+    "regular"
+  ],
+  "caret-square-right": [
+    "solid",
+    "regular"
+  ],
+  "caret-square-up": [
+    "solid",
+    "regular"
+  ],
+  "caret-up": [
+    "solid"
+  ],
+  "cart-arrow-down": [
+    "solid"
+  ],
+  "cart-plus": [
+    "solid"
+  ],
+  "cc-amazon-pay": [
+    "brands"
+  ],
+  "cc-amex": [
+    "brands"
+  ],
+  "cc-apple-pay": [
+    "brands"
+  ],
+  "cc-diners-club": [
+    "brands"
+  ],
+  "cc-discover": [
+    "brands"
+  ],
+  "cc-jcb": [
+    "brands"
+  ],
+  "cc-mastercard": [
+    "brands"
+  ],
+  "cc-paypal": [
+    "brands"
+  ],
+  "cc-stripe": [
+    "brands"
+  ],
+  "cc-visa": [
+    "brands"
+  ],
+  "centercode": [
+    "brands"
+  ],
+  "certificate": [
+    "solid"
+  ],
+  "chalkboard": [
+    "solid"
+  ],
+  "chalkboard-teacher": [
+    "solid"
+  ],
+  "charging-station": [
+    "solid"
+  ],
+  "chart-area": [
+    "solid"
+  ],
+  "chart-bar": [
+    "solid",
+    "regular"
+  ],
+  "chart-line": [
+    "solid"
+  ],
+  "chart-pie": [
+    "solid"
+  ],
+  "check": [
+    "solid"
+  ],
+  "check-circle": [
+    "solid",
+    "regular"
+  ],
+  "check-double": [
+    "solid"
+  ],
+  "check-square": [
+    "solid",
+    "regular"
+  ],
+  "chess": [
+    "solid"
+  ],
+  "chess-bishop": [
+    "solid"
+  ],
+  "chess-board": [
+    "solid"
+  ],
+  "chess-king": [
+    "solid"
+  ],
+  "chess-knight": [
+    "solid"
+  ],
+  "chess-pawn": [
+    "solid"
+  ],
+  "chess-queen": [
+    "solid"
+  ],
+  "chess-rook": [
+    "solid"
+  ],
+  "chevron-circle-down": [
+    "solid"
+  ],
+  "chevron-circle-left": [
+    "solid"
+  ],
+  "chevron-circle-right": [
+    "solid"
+  ],
+  "chevron-circle-up": [
+    "solid"
+  ],
+  "chevron-down": [
+    "solid"
+  ],
+  "chevron-left": [
+    "solid"
+  ],
+  "chevron-right": [
+    "solid"
+  ],
+  "chevron-up": [
+    "solid"
+  ],
+  "child": [
+    "solid"
+  ],
+  "chrome": [
+    "brands"
+  ],
+  "church": [
+    "solid"
+  ],
+  "circle": [
+    "solid",
+    "regular"
+  ],
+  "circle-notch": [
+    "solid"
+  ],
+  "clipboard": [
+    "solid",
+    "regular"
+  ],
+  "clipboard-check": [
+    "solid"
+  ],
+  "clipboard-list": [
+    "solid"
+  ],
+  "clock": [
+    "solid",
+    "regular"
+  ],
+  "clone": [
+    "solid",
+    "regular"
+  ],
+  "closed-captioning": [
+    "solid",
+    "regular"
+  ],
+  "cloud": [
+    "solid"
+  ],
+  "cloud-download-alt": [
+    "solid"
+  ],
+  "cloud-upload-alt": [
+    "solid"
+  ],
+  "cloudscale": [
+    "brands"
+  ],
+  "cloudsmith": [
+    "brands"
+  ],
+  "cloudversify": [
+    "brands"
+  ],
+  "cocktail": [
+    "solid"
+  ],
+  "code": [
+    "solid"
+  ],
+  "code-branch": [
+    "solid"
+  ],
+  "codepen": [
+    "brands"
+  ],
+  "codiepie": [
+    "brands"
+  ],
+  "coffee": [
+    "solid"
+  ],
+  "cog": [
+    "solid"
+  ],
+  "cogs": [
+    "solid"
+  ],
+  "coins": [
+    "solid"
+  ],
+  "columns": [
+    "solid"
+  ],
+  "comment": [
+    "solid",
+    "regular"
+  ],
+  "comment-alt": [
+    "solid",
+    "regular"
+  ],
+  "comment-dots": [
+    "solid",
+    "regular"
+  ],
+  "comment-slash": [
+    "solid"
+  ],
+  "comments": [
+    "solid",
+    "regular"
+  ],
+  "compact-disc": [
+    "solid"
+  ],
+  "compass": [
+    "solid",
+    "regular"
+  ],
+  "compress": [
+    "solid"
+  ],
+  "concierge-bell": [
+    "solid"
+  ],
+  "connectdevelop": [
+    "brands"
+  ],
+  "contao": [
+    "brands"
+  ],
+  "cookie": [
+    "solid"
+  ],
+  "cookie-bite": [
+    "solid"
+  ],
+  "copy": [
+    "solid",
+    "regular"
+  ],
+  "copyright": [
+    "solid",
+    "regular"
+  ],
+  "couch": [
+    "solid"
+  ],
+  "cpanel": [
+    "brands"
+  ],
+  "creative-commons": [
+    "brands"
+  ],
+  "creative-commons-by": [
+    "brands"
+  ],
+  "creative-commons-nc": [
+    "brands"
+  ],
+  "creative-commons-nc-eu": [
+    "brands"
+  ],
+  "creative-commons-nc-jp": [
+    "brands"
+  ],
+  "creative-commons-nd": [
+    "brands"
+  ],
+  "creative-commons-pd": [
+    "brands"
+  ],
+  "creative-commons-pd-alt": [
+    "brands"
+  ],
+  "creative-commons-remix": [
+    "brands"
+  ],
+  "creative-commons-sa": [
+    "brands"
+  ],
+  "creative-commons-sampling": [
+    "brands"
+  ],
+  "creative-commons-sampling-plus": [
+    "brands"
+  ],
+  "creative-commons-share": [
+    "brands"
+  ],
+  "credit-card": [
+    "solid",
+    "regular"
+  ],
+  "crop": [
+    "solid"
+  ],
+  "crop-alt": [
+    "solid"
+  ],
+  "crosshairs": [
+    "solid"
+  ],
+  "crow": [
+    "solid"
+  ],
+  "crown": [
+    "solid"
+  ],
+  "css3": [
+    "brands"
+  ],
+  "css3-alt": [
+    "brands"
+  ],
+  "cube": [
+    "solid"
+  ],
+  "cubes": [
+    "solid"
+  ],
+  "cut": [
+    "solid"
+  ],
+  "cuttlefish": [
+    "brands"
+  ],
+  "d-and-d": [
+    "brands"
+  ],
+  "dashcube": [
+    "brands"
+  ],
+  "database": [
+    "solid"
+  ],
+  "deaf": [
+    "solid"
+  ],
+  "delicious": [
+    "brands"
+  ],
+  "deploydog": [
+    "brands"
+  ],
+  "deskpro": [
+    "brands"
+  ],
+  "desktop": [
+    "solid"
+  ],
+  "deviantart": [
+    "brands"
+  ],
+  "diagnoses": [
+    "solid"
+  ],
+  "dice": [
+    "solid"
+  ],
+  "dice-five": [
+    "solid"
+  ],
+  "dice-four": [
+    "solid"
+  ],
+  "dice-one": [
+    "solid"
+  ],
+  "dice-six": [
+    "solid"
+  ],
+  "dice-three": [
+    "solid"
+  ],
+  "dice-two": [
+    "solid"
+  ],
+  "digg": [
+    "brands"
+  ],
+  "digital-ocean": [
+    "brands"
+  ],
+  "digital-tachograph": [
+    "solid"
+  ],
+  "directions": [
+    "solid"
+  ],
+  "discord": [
+    "brands"
+  ],
+  "discourse": [
+    "brands"
+  ],
+  "divide": [
+    "solid"
+  ],
+  "dizzy": [
+    "solid",
+    "regular"
+  ],
+  "dna": [
+    "solid"
+  ],
+  "dochub": [
+    "brands"
+  ],
+  "docker": [
+    "brands"
+  ],
+  "dollar-sign": [
+    "solid"
+  ],
+  "dolly": [
+    "solid"
+  ],
+  "dolly-flatbed": [
+    "solid"
+  ],
+  "donate": [
+    "solid"
+  ],
+  "door-closed": [
+    "solid"
+  ],
+  "door-open": [
+    "solid"
+  ],
+  "dot-circle": [
+    "solid",
+    "regular"
+  ],
+  "dove": [
+    "solid"
+  ],
+  "download": [
+    "solid"
+  ],
+  "draft2digital": [
+    "brands"
+  ],
+  "drafting-compass": [
+    "solid"
+  ],
+  "draw-polygon": [
+    "solid"
+  ],
+  "dribbble": [
+    "brands"
+  ],
+  "dribbble-square": [
+    "brands"
+  ],
+  "dropbox": [
+    "brands"
+  ],
+  "drum": [
+    "solid"
+  ],
+  "drum-steelpan": [
+    "solid"
+  ],
+  "drupal": [
+    "brands"
+  ],
+  "dumbbell": [
+    "solid"
+  ],
+  "dyalog": [
+    "brands"
+  ],
+  "earlybirds": [
+    "brands"
+  ],
+  "ebay": [
+    "brands"
+  ],
+  "edge": [
+    "brands"
+  ],
+  "edit": [
+    "solid",
+    "regular"
+  ],
+  "eject": [
+    "solid"
+  ],
+  "elementor": [
+    "brands"
+  ],
+  "ellipsis-h": [
+    "solid"
+  ],
+  "ellipsis-v": [
+    "solid"
+  ],
+  "ello": [
+    "brands"
+  ],
+  "ember": [
+    "brands"
+  ],
+  "empire": [
+    "brands"
+  ],
+  "envelope": [
+    "solid",
+    "regular"
+  ],
+  "envelope-open": [
+    "solid",
+    "regular"
+  ],
+  "envelope-square": [
+    "solid"
+  ],
+  "envira": [
+    "brands"
+  ],
+  "equals": [
+    "solid"
+  ],
+  "eraser": [
+    "solid"
+  ],
+  "erlang": [
+    "brands"
+  ],
+  "ethereum": [
+    "brands"
+  ],
+  "etsy": [
+    "brands"
+  ],
+  "euro-sign": [
+    "solid"
+  ],
+  "exchange-alt": [
+    "solid"
+  ],
+  "exclamation": [
+    "solid"
+  ],
+  "exclamation-circle": [
+    "solid"
+  ],
+  "exclamation-triangle": [
+    "solid"
+  ],
+  "expand": [
+    "solid"
+  ],
+  "expand-arrows-alt": [
+    "solid"
+  ],
+  "expeditedssl": [
+    "brands"
+  ],
+  "external-link-alt": [
+    "solid"
+  ],
+  "external-link-square-alt": [
+    "solid"
+  ],
+  "eye": [
+    "solid",
+    "regular"
+  ],
+  "eye-dropper": [
+    "solid"
+  ],
+  "eye-slash": [
+    "solid",
+    "regular"
+  ],
+  "facebook": [
+    "brands"
+  ],
+  "facebook-f": [
+    "brands"
+  ],
+  "facebook-messenger": [
+    "brands"
+  ],
+  "facebook-square": [
+    "brands"
+  ],
+  "fast-backward": [
+    "solid"
+  ],
+  "fast-forward": [
+    "solid"
+  ],
+  "fax": [
+    "solid"
+  ],
+  "feather": [
+    "solid"
+  ],
+  "feather-alt": [
+    "solid"
+  ],
+  "female": [
+    "solid"
+  ],
+  "fighter-jet": [
+    "solid"
+  ],
+  "file": [
+    "solid",
+    "regular"
+  ],
+  "file-alt": [
+    "solid",
+    "regular"
+  ],
+  "file-archive": [
+    "solid",
+    "regular"
+  ],
+  "file-audio": [
+    "solid",
+    "regular"
+  ],
+  "file-code": [
+    "solid",
+    "regular"
+  ],
+  "file-contract": [
+    "solid"
+  ],
+  "file-download": [
+    "solid"
+  ],
+  "file-excel": [
+    "solid",
+    "regular"
+  ],
+  "file-export": [
+    "solid"
+  ],
+  "file-image": [
+    "solid",
+    "regular"
+  ],
+  "file-import": [
+    "solid"
+  ],
+  "file-invoice": [
+    "solid"
+  ],
+  "file-invoice-dollar": [
+    "solid"
+  ],
+  "file-medical": [
+    "solid"
+  ],
+  "file-medical-alt": [
+    "solid"
+  ],
+  "file-pdf": [
+    "solid",
+    "regular"
+  ],
+  "file-powerpoint": [
+    "solid",
+    "regular"
+  ],
+  "file-prescription": [
+    "solid"
+  ],
+  "file-signature": [
+    "solid"
+  ],
+  "file-upload": [
+    "solid"
+  ],
+  "file-video": [
+    "solid",
+    "regular"
+  ],
+  "file-word": [
+    "solid",
+    "regular"
+  ],
+  "fill": [
+    "solid"
+  ],
+  "fill-drip": [
+    "solid"
+  ],
+  "film": [
+    "solid"
+  ],
+  "filter": [
+    "solid"
+  ],
+  "fingerprint": [
+    "solid"
+  ],
+  "fire": [
+    "solid"
+  ],
+  "fire-extinguisher": [
+    "solid"
+  ],
+  "firefox": [
+    "brands"
+  ],
+  "first-aid": [
+    "solid"
+  ],
+  "first-order": [
+    "brands"
+  ],
+  "first-order-alt": [
+    "brands"
+  ],
+  "firstdraft": [
+    "brands"
+  ],
+  "fish": [
+    "solid"
+  ],
+  "flag": [
+    "solid",
+    "regular"
+  ],
+  "flag-checkered": [
+    "solid"
+  ],
+  "flask": [
+    "solid"
+  ],
+  "flickr": [
+    "brands"
+  ],
+  "flipboard": [
+    "brands"
+  ],
+  "flushed": [
+    "solid",
+    "regular"
+  ],
+  "fly": [
+    "brands"
+  ],
+  "folder": [
+    "solid",
+    "regular"
+  ],
+  "folder-open": [
+    "solid",
+    "regular"
+  ],
+  "font": [
+    "solid"
+  ],
+  "font-awesome": [
+    "brands"
+  ],
+  "font-awesome-alt": [
+    "brands"
+  ],
+  "font-awesome-flag": [
+    "brands"
+  ],
+  "font-awesome-logo-full": [
+    "regular",
+    "solid",
+    "brands"
+  ],
+  "fonticons": [
+    "brands"
+  ],
+  "fonticons-fi": [
+    "brands"
+  ],
+  "football-ball": [
+    "solid"
+  ],
+  "fort-awesome": [
+    "brands"
+  ],
+  "fort-awesome-alt": [
+    "brands"
+  ],
+  "forumbee": [
+    "brands"
+  ],
+  "forward": [
+    "solid"
+  ],
+  "foursquare": [
+    "brands"
+  ],
+  "free-code-camp": [
+    "brands"
+  ],
+  "freebsd": [
+    "brands"
+  ],
+  "frog": [
+    "solid"
+  ],
+  "frown": [
+    "solid",
+    "regular"
+  ],
+  "frown-open": [
+    "solid",
+    "regular"
+  ],
+  "fulcrum": [
+    "brands"
+  ],
+  "futbol": [
+    "solid",
+    "regular"
+  ],
+  "galactic-republic": [
+    "brands"
+  ],
+  "galactic-senate": [
+    "brands"
+  ],
+  "gamepad": [
+    "solid"
+  ],
+  "gas-pump": [
+    "solid"
+  ],
+  "gavel": [
+    "solid"
+  ],
+  "gem": [
+    "solid",
+    "regular"
+  ],
+  "genderless": [
+    "solid"
+  ],
+  "get-pocket": [
+    "brands"
+  ],
+  "gg": [
+    "brands"
+  ],
+  "gg-circle": [
+    "brands"
+  ],
+  "gift": [
+    "solid"
+  ],
+  "git": [
+    "brands"
+  ],
+  "git-square": [
+    "brands"
+  ],
+  "github": [
+    "brands"
+  ],
+  "github-alt": [
+    "brands"
+  ],
+  "github-square": [
+    "brands"
+  ],
+  "gitkraken": [
+    "brands"
+  ],
+  "gitlab": [
+    "brands"
+  ],
+  "gitter": [
+    "brands"
+  ],
+  "glass-martini": [
+    "solid"
+  ],
+  "glass-martini-alt": [
+    "solid"
+  ],
+  "glasses": [
+    "solid"
+  ],
+  "glide": [
+    "brands"
+  ],
+  "glide-g": [
+    "brands"
+  ],
+  "globe": [
+    "solid"
+  ],
+  "globe-africa": [
+    "solid"
+  ],
+  "globe-americas": [
+    "solid"
+  ],
+  "globe-asia": [
+    "solid"
+  ],
+  "gofore": [
+    "brands"
+  ],
+  "golf-ball": [
+    "solid"
+  ],
+  "goodreads": [
+    "brands"
+  ],
+  "goodreads-g": [
+    "brands"
+  ],
+  "google": [
+    "brands"
+  ],
+  "google-drive": [
+    "brands"
+  ],
+  "google-play": [
+    "brands"
+  ],
+  "google-plus": [
+    "brands"
+  ],
+  "google-plus-g": [
+    "brands"
+  ],
+  "google-plus-square": [
+    "brands"
+  ],
+  "google-wallet": [
+    "brands"
+  ],
+  "graduation-cap": [
+    "solid"
+  ],
+  "gratipay": [
+    "brands"
+  ],
+  "grav": [
+    "brands"
+  ],
+  "greater-than": [
+    "solid"
+  ],
+  "greater-than-equal": [
+    "solid"
+  ],
+  "grimace": [
+    "solid",
+    "regular"
+  ],
+  "grin": [
+    "solid",
+    "regular"
+  ],
+  "grin-alt": [
+    "solid",
+    "regular"
+  ],
+  "grin-beam": [
+    "solid",
+    "regular"
+  ],
+  "grin-beam-sweat": [
+    "solid",
+    "regular"
+  ],
+  "grin-hearts": [
+    "solid",
+    "regular"
+  ],
+  "grin-squint": [
+    "solid",
+    "regular"
+  ],
+  "grin-squint-tears": [
+    "solid",
+    "regular"
+  ],
+  "grin-stars": [
+    "solid",
+    "regular"
+  ],
+  "grin-tears": [
+    "solid",
+    "regular"
+  ],
+  "grin-tongue": [
+    "solid",
+    "regular"
+  ],
+  "grin-tongue-squint": [
+    "solid",
+    "regular"
+  ],
+  "grin-tongue-wink": [
+    "solid",
+    "regular"
+  ],
+  "grin-wink": [
+    "solid",
+    "regular"
+  ],
+  "grip-horizontal": [
+    "solid"
+  ],
+  "grip-vertical": [
+    "solid"
+  ],
+  "gripfire": [
+    "brands"
+  ],
+  "grunt": [
+    "brands"
+  ],
+  "gulp": [
+    "brands"
+  ],
+  "h-square": [
+    "solid"
+  ],
+  "hacker-news": [
+    "brands"
+  ],
+  "hacker-news-square": [
+    "brands"
+  ],
+  "hackerrank": [
+    "brands"
+  ],
+  "hand-holding": [
+    "solid"
+  ],
+  "hand-holding-heart": [
+    "solid"
+  ],
+  "hand-holding-usd": [
+    "solid"
+  ],
+  "hand-lizard": [
+    "solid",
+    "regular"
+  ],
+  "hand-paper": [
+    "solid",
+    "regular"
+  ],
+  "hand-peace": [
+    "solid",
+    "regular"
+  ],
+  "hand-point-down": [
+    "solid",
+    "regular"
+  ],
+  "hand-point-left": [
+    "solid",
+    "regular"
+  ],
+  "hand-point-right": [
+    "solid",
+    "regular"
+  ],
+  "hand-point-up": [
+    "solid",
+    "regular"
+  ],
+  "hand-pointer": [
+    "solid",
+    "regular"
+  ],
+  "hand-rock": [
+    "solid",
+    "regular"
+  ],
+  "hand-scissors": [
+    "solid",
+    "regular"
+  ],
+  "hand-spock": [
+    "solid",
+    "regular"
+  ],
+  "hands": [
+    "solid"
+  ],
+  "hands-helping": [
+    "solid"
+  ],
+  "handshake": [
+    "solid",
+    "regular"
+  ],
+  "hashtag": [
+    "solid"
+  ],
+  "hdd": [
+    "solid",
+    "regular"
+  ],
+  "heading": [
+    "solid"
+  ],
+  "headphones": [
+    "solid"
+  ],
+  "headphones-alt": [
+    "solid"
+  ],
+  "headset": [
+    "solid"
+  ],
+  "heart": [
+    "solid",
+    "regular"
+  ],
+  "heartbeat": [
+    "solid"
+  ],
+  "helicopter": [
+    "solid"
+  ],
+  "highlighter": [
+    "solid"
+  ],
+  "hips": [
+    "brands"
+  ],
+  "hire-a-helper": [
+    "brands"
+  ],
+  "history": [
+    "solid"
+  ],
+  "hockey-puck": [
+    "solid"
+  ],
+  "home": [
+    "solid"
+  ],
+  "hooli": [
+    "brands"
+  ],
+  "hornbill": [
+    "brands"
+  ],
+  "hospital": [
+    "solid",
+    "regular"
+  ],
+  "hospital-alt": [
+    "solid"
+  ],
+  "hospital-symbol": [
+    "solid"
+  ],
+  "hot-tub": [
+    "solid"
+  ],
+  "hotel": [
+    "solid"
+  ],
+  "hotjar": [
+    "brands"
+  ],
+  "hourglass": [
+    "solid",
+    "regular"
+  ],
+  "hourglass-end": [
+    "solid"
+  ],
+  "hourglass-half": [
+    "solid"
+  ],
+  "hourglass-start": [
+    "solid"
+  ],
+  "houzz": [
+    "brands"
+  ],
+  "html5": [
+    "brands"
+  ],
+  "hubspot": [
+    "brands"
+  ],
+  "i-cursor": [
+    "solid"
+  ],
+  "id-badge": [
+    "solid",
+    "regular"
+  ],
+  "id-card": [
+    "solid",
+    "regular"
+  ],
+  "id-card-alt": [
+    "solid"
+  ],
+  "image": [
+    "solid",
+    "regular"
+  ],
+  "images": [
+    "solid",
+    "regular"
+  ],
+  "imdb": [
+    "brands"
+  ],
+  "inbox": [
+    "solid"
+  ],
+  "indent": [
+    "solid"
+  ],
+  "industry": [
+    "solid"
+  ],
+  "infinity": [
+    "solid"
+  ],
+  "info": [
+    "solid"
+  ],
+  "info-circle": [
+    "solid"
+  ],
+  "instagram": [
+    "brands"
+  ],
+  "internet-explorer": [
+    "brands"
+  ],
+  "ioxhost": [
+    "brands"
+  ],
+  "italic": [
+    "solid"
+  ],
+  "itunes": [
+    "brands"
+  ],
+  "itunes-note": [
+    "brands"
+  ],
+  "java": [
+    "brands"
+  ],
+  "jedi-order": [
+    "brands"
+  ],
+  "jenkins": [
+    "brands"
+  ],
+  "joget": [
+    "brands"
+  ],
+  "joint": [
+    "solid"
+  ],
+  "joomla": [
+    "brands"
+  ],
+  "js": [
+    "brands"
+  ],
+  "js-square": [
+    "brands"
+  ],
+  "jsfiddle": [
+    "brands"
+  ],
+  "kaggle": [
+    "brands"
+  ],
+  "key": [
+    "solid"
+  ],
+  "keybase": [
+    "brands"
+  ],
+  "keyboard": [
+    "solid",
+    "regular"
+  ],
+  "keycdn": [
+    "brands"
+  ],
+  "kickstarter": [
+    "brands"
+  ],
+  "kickstarter-k": [
+    "brands"
+  ],
+  "kiss": [
+    "solid",
+    "regular"
+  ],
+  "kiss-beam": [
+    "solid",
+    "regular"
+  ],
+  "kiss-wink-heart": [
+    "solid",
+    "regular"
+  ],
+  "kiwi-bird": [
+    "solid"
+  ],
+  "korvue": [
+    "brands"
+  ],
+  "language": [
+    "solid"
+  ],
+  "laptop": [
+    "solid"
+  ],
+  "laptop-code": [
+    "solid"
+  ],
+  "laravel": [
+    "brands"
+  ],
+  "lastfm": [
+    "brands"
+  ],
+  "lastfm-square": [
+    "brands"
+  ],
+  "laugh": [
+    "solid",
+    "regular"
+  ],
+  "laugh-beam": [
+    "solid",
+    "regular"
+  ],
+  "laugh-squint": [
+    "solid",
+    "regular"
+  ],
+  "laugh-wink": [
+    "solid",
+    "regular"
+  ],
+  "layer-group": [
+    "solid"
+  ],
+  "leaf": [
+    "solid"
+  ],
+  "leanpub": [
+    "brands"
+  ],
+  "lemon": [
+    "solid",
+    "regular"
+  ],
+  "less": [
+    "brands"
+  ],
+  "less-than": [
+    "solid"
+  ],
+  "less-than-equal": [
+    "solid"
+  ],
+  "level-down-alt": [
+    "solid"
+  ],
+  "level-up-alt": [
+    "solid"
+  ],
+  "life-ring": [
+    "solid",
+    "regular"
+  ],
+  "lightbulb": [
+    "solid",
+    "regular"
+  ],
+  "line": [
+    "brands"
+  ],
+  "link": [
+    "solid"
+  ],
+  "linkedin": [
+    "brands"
+  ],
+  "linkedin-in": [
+    "brands"
+  ],
+  "linode": [
+    "brands"
+  ],
+  "linux": [
+    "brands"
+  ],
+  "lira-sign": [
+    "solid"
+  ],
+  "list": [
+    "solid"
+  ],
+  "list-alt": [
+    "solid",
+    "regular"
+  ],
+  "list-ol": [
+    "solid"
+  ],
+  "list-ul": [
+    "solid"
+  ],
+  "location-arrow": [
+    "solid"
+  ],
+  "lock": [
+    "solid"
+  ],
+  "lock-open": [
+    "solid"
+  ],
+  "long-arrow-alt-down": [
+    "solid"
+  ],
+  "long-arrow-alt-left": [
+    "solid"
+  ],
+  "long-arrow-alt-right": [
+    "solid"
+  ],
+  "long-arrow-alt-up": [
+    "solid"
+  ],
+  "low-vision": [
+    "solid"
+  ],
+  "luggage-cart": [
+    "solid"
+  ],
+  "lyft": [
+    "brands"
+  ],
+  "magento": [
+    "brands"
+  ],
+  "magic": [
+    "solid"
+  ],
+  "magnet": [
+    "solid"
+  ],
+  "mailchimp": [
+    "brands"
+  ],
+  "male": [
+    "solid"
+  ],
+  "mandalorian": [
+    "brands"
+  ],
+  "map": [
+    "solid",
+    "regular"
+  ],
+  "map-marked": [
+    "solid"
+  ],
+  "map-marked-alt": [
+    "solid"
+  ],
+  "map-marker": [
+    "solid"
+  ],
+  "map-marker-alt": [
+    "solid"
+  ],
+  "map-pin": [
+    "solid"
+  ],
+  "map-signs": [
+    "solid"
+  ],
+  "markdown": [
+    "brands"
+  ],
+  "marker": [
+    "solid"
+  ],
+  "mars": [
+    "solid"
+  ],
+  "mars-double": [
+    "solid"
+  ],
+  "mars-stroke": [
+    "solid"
+  ],
+  "mars-stroke-h": [
+    "solid"
+  ],
+  "mars-stroke-v": [
+    "solid"
+  ],
+  "mastodon": [
+    "brands"
+  ],
+  "maxcdn": [
+    "brands"
+  ],
+  "medal": [
+    "solid"
+  ],
+  "medapps": [
+    "brands"
+  ],
+  "medium": [
+    "brands"
+  ],
+  "medium-m": [
+    "brands"
+  ],
+  "medkit": [
+    "solid"
+  ],
+  "medrt": [
+    "brands"
+  ],
+  "meetup": [
+    "brands"
+  ],
+  "megaport": [
+    "brands"
+  ],
+  "meh": [
+    "solid",
+    "regular"
+  ],
+  "meh-blank": [
+    "solid",
+    "regular"
+  ],
+  "meh-rolling-eyes": [
+    "solid",
+    "regular"
+  ],
+  "memory": [
+    "solid"
+  ],
+  "mercury": [
+    "solid"
+  ],
+  "microchip": [
+    "solid"
+  ],
+  "microphone": [
+    "solid"
+  ],
+  "microphone-alt": [
+    "solid"
+  ],
+  "microphone-alt-slash": [
+    "solid"
+  ],
+  "microphone-slash": [
+    "solid"
+  ],
+  "microscope": [
+    "solid"
+  ],
+  "microsoft": [
+    "brands"
+  ],
+  "minus": [
+    "solid"
+  ],
+  "minus-circle": [
+    "solid"
+  ],
+  "minus-square": [
+    "solid",
+    "regular"
+  ],
+  "mix": [
+    "brands"
+  ],
+  "mixcloud": [
+    "brands"
+  ],
+  "mizuni": [
+    "brands"
+  ],
+  "mobile": [
+    "solid"
+  ],
+  "mobile-alt": [
+    "solid"
+  ],
+  "modx": [
+    "brands"
+  ],
+  "monero": [
+    "brands"
+  ],
+  "money-bill": [
+    "solid"
+  ],
+  "money-bill-alt": [
+    "solid",
+    "regular"
+  ],
+  "money-bill-wave": [
+    "solid"
+  ],
+  "money-bill-wave-alt": [
+    "solid"
+  ],
+  "money-check": [
+    "solid"
+  ],
+  "money-check-alt": [
+    "solid"
+  ],
+  "monument": [
+    "solid"
+  ],
+  "moon": [
+    "solid",
+    "regular"
+  ],
+  "mortar-pestle": [
+    "solid"
+  ],
+  "motorcycle": [
+    "solid"
+  ],
+  "mouse-pointer": [
+    "solid"
+  ],
+  "music": [
+    "solid"
+  ],
+  "napster": [
+    "brands"
+  ],
+  "neos": [
+    "brands"
+  ],
+  "neuter": [
+    "solid"
+  ],
+  "newspaper": [
+    "solid",
+    "regular"
+  ],
+  "nimblr": [
+    "brands"
+  ],
+  "nintendo-switch": [
+    "brands"
+  ],
+  "node": [
+    "brands"
+  ],
+  "node-js": [
+    "brands"
+  ],
+  "not-equal": [
+    "solid"
+  ],
+  "notes-medical": [
+    "solid"
+  ],
+  "npm": [
+    "brands"
+  ],
+  "ns8": [
+    "brands"
+  ],
+  "nutritionix": [
+    "brands"
+  ],
+  "object-group": [
+    "solid",
+    "regular"
+  ],
+  "object-ungroup": [
+    "solid",
+    "regular"
+  ],
+  "odnoklassniki": [
+    "brands"
+  ],
+  "odnoklassniki-square": [
+    "brands"
+  ],
+  "oil-can": [
+    "solid"
+  ],
+  "old-republic": [
+    "brands"
+  ],
+  "opencart": [
+    "brands"
+  ],
+  "openid": [
+    "brands"
+  ],
+  "opera": [
+    "brands"
+  ],
+  "optin-monster": [
+    "brands"
+  ],
+  "osi": [
+    "brands"
+  ],
+  "outdent": [
+    "solid"
+  ],
+  "page4": [
+    "brands"
+  ],
+  "pagelines": [
+    "brands"
+  ],
+  "paint-brush": [
+    "solid"
+  ],
+  "paint-roller": [
+    "solid"
+  ],
+  "palette": [
+    "solid"
+  ],
+  "palfed": [
+    "brands"
+  ],
+  "pallet": [
+    "solid"
+  ],
+  "paper-plane": [
+    "solid",
+    "regular"
+  ],
+  "paperclip": [
+    "solid"
+  ],
+  "parachute-box": [
+    "solid"
+  ],
+  "paragraph": [
+    "solid"
+  ],
+  "parking": [
+    "solid"
+  ],
+  "passport": [
+    "solid"
+  ],
+  "paste": [
+    "solid"
+  ],
+  "patreon": [
+    "brands"
+  ],
+  "pause": [
+    "solid"
+  ],
+  "pause-circle": [
+    "solid",
+    "regular"
+  ],
+  "paw": [
+    "solid"
+  ],
+  "paypal": [
+    "brands"
+  ],
+  "pen": [
+    "solid"
+  ],
+  "pen-alt": [
+    "solid"
+  ],
+  "pen-fancy": [
+    "solid"
+  ],
+  "pen-nib": [
+    "solid"
+  ],
+  "pen-square": [
+    "solid"
+  ],
+  "pencil-alt": [
+    "solid"
+  ],
+  "pencil-ruler": [
+    "solid"
+  ],
+  "people-carry": [
+    "solid"
+  ],
+  "percent": [
+    "solid"
+  ],
+  "percentage": [
+    "solid"
+  ],
+  "periscope": [
+    "brands"
+  ],
+  "phabricator": [
+    "brands"
+  ],
+  "phoenix-framework": [
+    "brands"
+  ],
+  "phoenix-squadron": [
+    "brands"
+  ],
+  "phone": [
+    "solid"
+  ],
+  "phone-slash": [
+    "solid"
+  ],
+  "phone-square": [
+    "solid"
+  ],
+  "phone-volume": [
+    "solid"
+  ],
+  "php": [
+    "brands"
+  ],
+  "pied-piper": [
+    "brands"
+  ],
+  "pied-piper-alt": [
+    "brands"
+  ],
+  "pied-piper-hat": [
+    "brands"
+  ],
+  "pied-piper-pp": [
+    "brands"
+  ],
+  "piggy-bank": [
+    "solid"
+  ],
+  "pills": [
+    "solid"
+  ],
+  "pinterest": [
+    "brands"
+  ],
+  "pinterest-p": [
+    "brands"
+  ],
+  "pinterest-square": [
+    "brands"
+  ],
+  "plane": [
+    "solid"
+  ],
+  "plane-arrival": [
+    "solid"
+  ],
+  "plane-departure": [
+    "solid"
+  ],
+  "play": [
+    "solid"
+  ],
+  "play-circle": [
+    "solid",
+    "regular"
+  ],
+  "playstation": [
+    "brands"
+  ],
+  "plug": [
+    "solid"
+  ],
+  "plus": [
+    "solid"
+  ],
+  "plus-circle": [
+    "solid"
+  ],
+  "plus-square": [
+    "solid",
+    "regular"
+  ],
+  "podcast": [
+    "solid"
+  ],
+  "poo": [
+    "solid"
+  ],
+  "poop": [
+    "solid"
+  ],
+  "portrait": [
+    "solid"
+  ],
+  "pound-sign": [
+    "solid"
+  ],
+  "power-off": [
+    "solid"
+  ],
+  "prescription": [
+    "solid"
+  ],
+  "prescription-bottle": [
+    "solid"
+  ],
+  "prescription-bottle-alt": [
+    "solid"
+  ],
+  "print": [
+    "solid"
+  ],
+  "procedures": [
+    "solid"
+  ],
+  "product-hunt": [
+    "brands"
+  ],
+  "project-diagram": [
+    "solid"
+  ],
+  "pushed": [
+    "brands"
+  ],
+  "puzzle-piece": [
+    "solid"
+  ],
+  "python": [
+    "brands"
+  ],
+  "qq": [
+    "brands"
+  ],
+  "qrcode": [
+    "solid"
+  ],
+  "question": [
+    "solid"
+  ],
+  "question-circle": [
+    "solid",
+    "regular"
+  ],
+  "quidditch": [
+    "solid"
+  ],
+  "quinscape": [
+    "brands"
+  ],
+  "quora": [
+    "brands"
+  ],
+  "quote-left": [
+    "solid"
+  ],
+  "quote-right": [
+    "solid"
+  ],
+  "r-project": [
+    "brands"
+  ],
+  "random": [
+    "solid"
+  ],
+  "ravelry": [
+    "brands"
+  ],
+  "react": [
+    "brands"
+  ],
+  "readme": [
+    "brands"
+  ],
+  "rebel": [
+    "brands"
+  ],
+  "receipt": [
+    "solid"
+  ],
+  "recycle": [
+    "solid"
+  ],
+  "red-river": [
+    "brands"
+  ],
+  "reddit": [
+    "brands"
+  ],
+  "reddit-alien": [
+    "brands"
+  ],
+  "reddit-square": [
+    "brands"
+  ],
+  "redo": [
+    "solid"
+  ],
+  "redo-alt": [
+    "solid"
+  ],
+  "registered": [
+    "solid",
+    "regular"
+  ],
+  "rendact": [
+    "brands"
+  ],
+  "renren": [
+    "brands"
+  ],
+  "reply": [
+    "solid"
+  ],
+  "reply-all": [
+    "solid"
+  ],
+  "replyd": [
+    "brands"
+  ],
+  "researchgate": [
+    "brands"
+  ],
+  "resolving": [
+    "brands"
+  ],
+  "retweet": [
+    "solid"
+  ],
+  "rev": [
+    "brands"
+  ],
+  "ribbon": [
+    "solid"
+  ],
+  "road": [
+    "solid"
+  ],
+  "robot": [
+    "solid"
+  ],
+  "rocket": [
+    "solid"
+  ],
+  "rocketchat": [
+    "brands"
+  ],
+  "rockrms": [
+    "brands"
+  ],
+  "route": [
+    "solid"
+  ],
+  "rss": [
+    "solid"
+  ],
+  "rss-square": [
+    "solid"
+  ],
+  "ruble-sign": [
+    "solid"
+  ],
+  "ruler": [
+    "solid"
+  ],
+  "ruler-combined": [
+    "solid"
+  ],
+  "ruler-horizontal": [
+    "solid"
+  ],
+  "ruler-vertical": [
+    "solid"
+  ],
+  "rupee-sign": [
+    "solid"
+  ],
+  "sad-cry": [
+    "solid",
+    "regular"
+  ],
+  "sad-tear": [
+    "solid",
+    "regular"
+  ],
+  "safari": [
+    "brands"
+  ],
+  "sass": [
+    "brands"
+  ],
+  "save": [
+    "solid",
+    "regular"
+  ],
+  "schlix": [
+    "brands"
+  ],
+  "school": [
+    "solid"
+  ],
+  "screwdriver": [
+    "solid"
+  ],
+  "scribd": [
+    "brands"
+  ],
+  "search": [
+    "solid"
+  ],
+  "search-minus": [
+    "solid"
+  ],
+  "search-plus": [
+    "solid"
+  ],
+  "searchengin": [
+    "brands"
+  ],
+  "seedling": [
+    "solid"
+  ],
+  "sellcast": [
+    "brands"
+  ],
+  "sellsy": [
+    "brands"
+  ],
+  "server": [
+    "solid"
+  ],
+  "servicestack": [
+    "brands"
+  ],
+  "shapes": [
+    "solid"
+  ],
+  "share": [
+    "solid"
+  ],
+  "share-alt": [
+    "solid"
+  ],
+  "share-alt-square": [
+    "solid"
+  ],
+  "share-square": [
+    "solid",
+    "regular"
+  ],
+  "shekel-sign": [
+    "solid"
+  ],
+  "shield-alt": [
+    "solid"
+  ],
+  "ship": [
+    "solid"
+  ],
+  "shipping-fast": [
+    "solid"
+  ],
+  "shirtsinbulk": [
+    "brands"
+  ],
+  "shoe-prints": [
+    "solid"
+  ],
+  "shopping-bag": [
+    "solid"
+  ],
+  "shopping-basket": [
+    "solid"
+  ],
+  "shopping-cart": [
+    "solid"
+  ],
+  "shopware": [
+    "brands"
+  ],
+  "shower": [
+    "solid"
+  ],
+  "shuttle-van": [
+    "solid"
+  ],
+  "sign": [
+    "solid"
+  ],
+  "sign-in-alt": [
+    "solid"
+  ],
+  "sign-language": [
+    "solid"
+  ],
+  "sign-out-alt": [
+    "solid"
+  ],
+  "signal": [
+    "solid"
+  ],
+  "signature": [
+    "solid"
+  ],
+  "simplybuilt": [
+    "brands"
+  ],
+  "sistrix": [
+    "brands"
+  ],
+  "sitemap": [
+    "solid"
+  ],
+  "sith": [
+    "brands"
+  ],
+  "skull": [
+    "solid"
+  ],
+  "skyatlas": [
+    "brands"
+  ],
+  "skype": [
+    "brands"
+  ],
+  "slack": [
+    "brands"
+  ],
+  "slack-hash": [
+    "brands"
+  ],
+  "sliders-h": [
+    "solid"
+  ],
+  "slideshare": [
+    "brands"
+  ],
+  "smile": [
+    "solid",
+    "regular"
+  ],
+  "smile-beam": [
+    "solid",
+    "regular"
+  ],
+  "smile-wink": [
+    "solid",
+    "regular"
+  ],
+  "smoking": [
+    "solid"
+  ],
+  "smoking-ban": [
+    "solid"
+  ],
+  "snapchat": [
+    "brands"
+  ],
+  "snapchat-ghost": [
+    "brands"
+  ],
+  "snapchat-square": [
+    "brands"
+  ],
+  "snowflake": [
+    "solid",
+    "regular"
+  ],
+  "solar-panel": [
+    "solid"
+  ],
+  "sort": [
+    "solid"
+  ],
+  "sort-alpha-down": [
+    "solid"
+  ],
+  "sort-alpha-up": [
+    "solid"
+  ],
+  "sort-amount-down": [
+    "solid"
+  ],
+  "sort-amount-up": [
+    "solid"
+  ],
+  "sort-down": [
+    "solid"
+  ],
+  "sort-numeric-down": [
+    "solid"
+  ],
+  "sort-numeric-up": [
+    "solid"
+  ],
+  "sort-up": [
+    "solid"
+  ],
+  "soundcloud": [
+    "brands"
+  ],
+  "spa": [
+    "solid"
+  ],
+  "space-shuttle": [
+    "solid"
+  ],
+  "speakap": [
+    "brands"
+  ],
+  "spinner": [
+    "solid"
+  ],
+  "splotch": [
+    "solid"
+  ],
+  "spotify": [
+    "brands"
+  ],
+  "spray-can": [
+    "solid"
+  ],
+  "square": [
+    "solid",
+    "regular"
+  ],
+  "square-full": [
+    "solid"
+  ],
+  "squarespace": [
+    "brands"
+  ],
+  "stack-exchange": [
+    "brands"
+  ],
+  "stack-overflow": [
+    "brands"
+  ],
+  "stamp": [
+    "solid"
+  ],
+  "star": [
+    "solid",
+    "regular"
+  ],
+  "star-half": [
+    "solid",
+    "regular"
+  ],
+  "star-half-alt": [
+    "solid"
+  ],
+  "star-of-life": [
+    "solid"
+  ],
+  "staylinked": [
+    "brands"
+  ],
+  "steam": [
+    "brands"
+  ],
+  "steam-square": [
+    "brands"
+  ],
+  "steam-symbol": [
+    "brands"
+  ],
+  "step-backward": [
+    "solid"
+  ],
+  "step-forward": [
+    "solid"
+  ],
+  "stethoscope": [
+    "solid"
+  ],
+  "sticker-mule": [
+    "brands"
+  ],
+  "sticky-note": [
+    "solid",
+    "regular"
+  ],
+  "stop": [
+    "solid"
+  ],
+  "stop-circle": [
+    "solid",
+    "regular"
+  ],
+  "stopwatch": [
+    "solid"
+  ],
+  "store": [
+    "solid"
+  ],
+  "store-alt": [
+    "solid"
+  ],
+  "strava": [
+    "brands"
+  ],
+  "stream": [
+    "solid"
+  ],
+  "street-view": [
+    "solid"
+  ],
+  "strikethrough": [
+    "solid"
+  ],
+  "stripe": [
+    "brands"
+  ],
+  "stripe-s": [
+    "brands"
+  ],
+  "stroopwafel": [
+    "solid"
+  ],
+  "studiovinari": [
+    "brands"
+  ],
+  "stumbleupon": [
+    "brands"
+  ],
+  "stumbleupon-circle": [
+    "brands"
+  ],
+  "subscript": [
+    "solid"
+  ],
+  "subway": [
+    "solid"
+  ],
+  "suitcase": [
+    "solid"
+  ],
+  "suitcase-rolling": [
+    "solid"
+  ],
+  "sun": [
+    "solid",
+    "regular"
+  ],
+  "superpowers": [
+    "brands"
+  ],
+  "superscript": [
+    "solid"
+  ],
+  "supple": [
+    "brands"
+  ],
+  "surprise": [
+    "solid",
+    "regular"
+  ],
+  "swatchbook": [
+    "solid"
+  ],
+  "swimmer": [
+    "solid"
+  ],
+  "swimming-pool": [
+    "solid"
+  ],
+  "sync": [
+    "solid"
+  ],
+  "sync-alt": [
+    "solid"
+  ],
+  "syringe": [
+    "solid"
+  ],
+  "table": [
+    "solid"
+  ],
+  "table-tennis": [
+    "solid"
+  ],
+  "tablet": [
+    "solid"
+  ],
+  "tablet-alt": [
+    "solid"
+  ],
+  "tablets": [
+    "solid"
+  ],
+  "tachometer-alt": [
+    "solid"
+  ],
+  "tag": [
+    "solid"
+  ],
+  "tags": [
+    "solid"
+  ],
+  "tape": [
+    "solid"
+  ],
+  "tasks": [
+    "solid"
+  ],
+  "taxi": [
+    "solid"
+  ],
+  "teamspeak": [
+    "brands"
+  ],
+  "teeth": [
+    "solid"
+  ],
+  "teeth-open": [
+    "solid"
+  ],
+  "telegram": [
+    "brands"
+  ],
+  "telegram-plane": [
+    "brands"
+  ],
+  "tencent-weibo": [
+    "brands"
+  ],
+  "terminal": [
+    "solid"
+  ],
+  "text-height": [
+    "solid"
+  ],
+  "text-width": [
+    "solid"
+  ],
+  "th": [
+    "solid"
+  ],
+  "th-large": [
+    "solid"
+  ],
+  "th-list": [
+    "solid"
+  ],
+  "theater-masks": [
+    "solid"
+  ],
+  "themeco": [
+    "brands"
+  ],
+  "themeisle": [
+    "brands"
+  ],
+  "thermometer": [
+    "solid"
+  ],
+  "thermometer-empty": [
+    "solid"
+  ],
+  "thermometer-full": [
+    "solid"
+  ],
+  "thermometer-half": [
+    "solid"
+  ],
+  "thermometer-quarter": [
+    "solid"
+  ],
+  "thermometer-three-quarters": [
+    "solid"
+  ],
+  "thumbs-down": [
+    "solid",
+    "regular"
+  ],
+  "thumbs-up": [
+    "solid",
+    "regular"
+  ],
+  "thumbtack": [
+    "solid"
+  ],
+  "ticket-alt": [
+    "solid"
+  ],
+  "times": [
+    "solid"
+  ],
+  "times-circle": [
+    "solid",
+    "regular"
+  ],
+  "tint": [
+    "solid"
+  ],
+  "tint-slash": [
+    "solid"
+  ],
+  "tired": [
+    "solid",
+    "regular"
+  ],
+  "toggle-off": [
+    "solid"
+  ],
+  "toggle-on": [
+    "solid"
+  ],
+  "toolbox": [
+    "solid"
+  ],
+  "tooth": [
+    "solid"
+  ],
+  "trade-federation": [
+    "brands"
+  ],
+  "trademark": [
+    "solid"
+  ],
+  "traffic-light": [
+    "solid"
+  ],
+  "train": [
+    "solid"
+  ],
+  "transgender": [
+    "solid"
+  ],
+  "transgender-alt": [
+    "solid"
+  ],
+  "trash": [
+    "solid"
+  ],
+  "trash-alt": [
+    "solid",
+    "regular"
+  ],
+  "tree": [
+    "solid"
+  ],
+  "trello": [
+    "brands"
+  ],
+  "tripadvisor": [
+    "brands"
+  ],
+  "trophy": [
+    "solid"
+  ],
+  "truck": [
+    "solid"
+  ],
+  "truck-loading": [
+    "solid"
+  ],
+  "truck-monster": [
+    "solid"
+  ],
+  "truck-moving": [
+    "solid"
+  ],
+  "truck-pickup": [
+    "solid"
+  ],
+  "tshirt": [
+    "solid"
+  ],
+  "tty": [
+    "solid"
+  ],
+  "tumblr": [
+    "brands"
+  ],
+  "tumblr-square": [
+    "brands"
+  ],
+  "tv": [
+    "solid"
+  ],
+  "twitch": [
+    "brands"
+  ],
+  "twitter": [
+    "brands"
+  ],
+  "twitter-square": [
+    "brands"
+  ],
+  "typo3": [
+    "brands"
+  ],
+  "uber": [
+    "brands"
+  ],
+  "uikit": [
+    "brands"
+  ],
+  "umbrella": [
+    "solid"
+  ],
+  "umbrella-beach": [
+    "solid"
+  ],
+  "underline": [
+    "solid"
+  ],
+  "undo": [
+    "solid"
+  ],
+  "undo-alt": [
+    "solid"
+  ],
+  "uniregistry": [
+    "brands"
+  ],
+  "universal-access": [
+    "solid"
+  ],
+  "university": [
+    "solid"
+  ],
+  "unlink": [
+    "solid"
+  ],
+  "unlock": [
+    "solid"
+  ],
+  "unlock-alt": [
+    "solid"
+  ],
+  "untappd": [
+    "brands"
+  ],
+  "upload": [
+    "solid"
+  ],
+  "usb": [
+    "brands"
+  ],
+  "user": [
+    "solid",
+    "regular"
+  ],
+  "user-alt": [
+    "solid"
+  ],
+  "user-alt-slash": [
+    "solid"
+  ],
+  "user-astronaut": [
+    "solid"
+  ],
+  "user-check": [
+    "solid"
+  ],
+  "user-circle": [
+    "solid",
+    "regular"
+  ],
+  "user-clock": [
+    "solid"
+  ],
+  "user-cog": [
+    "solid"
+  ],
+  "user-edit": [
+    "solid"
+  ],
+  "user-friends": [
+    "solid"
+  ],
+  "user-graduate": [
+    "solid"
+  ],
+  "user-lock": [
+    "solid"
+  ],
+  "user-md": [
+    "solid"
+  ],
+  "user-minus": [
+    "solid"
+  ],
+  "user-ninja": [
+    "solid"
+  ],
+  "user-plus": [
+    "solid"
+  ],
+  "user-secret": [
+    "solid"
+  ],
+  "user-shield": [
+    "solid"
+  ],
+  "user-slash": [
+    "solid"
+  ],
+  "user-tag": [
+    "solid"
+  ],
+  "user-tie": [
+    "solid"
+  ],
+  "user-times": [
+    "solid"
+  ],
+  "users": [
+    "solid"
+  ],
+  "users-cog": [
+    "solid"
+  ],
+  "ussunnah": [
+    "brands"
+  ],
+  "utensil-spoon": [
+    "solid"
+  ],
+  "utensils": [
+    "solid"
+  ],
+  "vaadin": [
+    "brands"
+  ],
+  "vector-square": [
+    "solid"
+  ],
+  "venus": [
+    "solid"
+  ],
+  "venus-double": [
+    "solid"
+  ],
+  "venus-mars": [
+    "solid"
+  ],
+  "viacoin": [
+    "brands"
+  ],
+  "viadeo": [
+    "brands"
+  ],
+  "viadeo-square": [
+    "brands"
+  ],
+  "vial": [
+    "solid"
+  ],
+  "vials": [
+    "solid"
+  ],
+  "viber": [
+    "brands"
+  ],
+  "video": [
+    "solid"
+  ],
+  "video-slash": [
+    "solid"
+  ],
+  "vimeo": [
+    "brands"
+  ],
+  "vimeo-square": [
+    "brands"
+  ],
+  "vimeo-v": [
+    "brands"
+  ],
+  "vine": [
+    "brands"
+  ],
+  "vk": [
+    "brands"
+  ],
+  "vnv": [
+    "brands"
+  ],
+  "volleyball-ball": [
+    "solid"
+  ],
+  "volume-down": [
+    "solid"
+  ],
+  "volume-off": [
+    "solid"
+  ],
+  "volume-up": [
+    "solid"
+  ],
+  "vuejs": [
+    "brands"
+  ],
+  "walking": [
+    "solid"
+  ],
+  "wallet": [
+    "solid"
+  ],
+  "warehouse": [
+    "solid"
+  ],
+  "weebly": [
+    "brands"
+  ],
+  "weibo": [
+    "brands"
+  ],
+  "weight": [
+    "solid"
+  ],
+  "weight-hanging": [
+    "solid"
+  ],
+  "weixin": [
+    "brands"
+  ],
+  "whatsapp": [
+    "brands"
+  ],
+  "whatsapp-square": [
+    "brands"
+  ],
+  "wheelchair": [
+    "solid"
+  ],
+  "whmcs": [
+    "brands"
+  ],
+  "wifi": [
+    "solid"
+  ],
+  "wikipedia-w": [
+    "brands"
+  ],
+  "window-close": [
+    "solid",
+    "regular"
+  ],
+  "window-maximize": [
+    "solid",
+    "regular"
+  ],
+  "window-minimize": [
+    "solid",
+    "regular"
+  ],
+  "window-restore": [
+    "solid",
+    "regular"
+  ],
+  "windows": [
+    "brands"
+  ],
+  "wine-glass": [
+    "solid"
+  ],
+  "wine-glass-alt": [
+    "solid"
+  ],
+  "wix": [
+    "brands"
+  ],
+  "wolf-pack-battalion": [
+    "brands"
+  ],
+  "won-sign": [
+    "solid"
+  ],
+  "wordpress": [
+    "brands"
+  ],
+  "wordpress-simple": [
+    "brands"
+  ],
+  "wpbeginner": [
+    "brands"
+  ],
+  "wpexplorer": [
+    "brands"
+  ],
+  "wpforms": [
+    "brands"
+  ],
+  "wrench": [
+    "solid"
+  ],
+  "x-ray": [
+    "solid"
+  ],
+  "xbox": [
+    "brands"
+  ],
+  "xing": [
+    "brands"
+  ],
+  "xing-square": [
+    "brands"
+  ],
+  "y-combinator": [
+    "brands"
+  ],
+  "yahoo": [
+    "brands"
+  ],
+  "yandex": [
+    "brands"
+  ],
+  "yandex-international": [
+    "brands"
+  ],
+  "yelp": [
+    "brands"
+  ],
+  "yen-sign": [
+    "solid"
+  ],
+  "yoast": [
+    "brands"
+  ],
+  "youtube": [
+    "brands"
+  ],
+  "youtube-square": [
+    "brands"
+  ],
+  "zhihu": [
+    "brands"
+  ]
+}
