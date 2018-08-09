@@ -10,7 +10,7 @@ fontawesome_pattern = r':(fa[bsrl]?)?\s?fa-([-\w]+)\s?(fa-(xs|sm|lg|[\d+]x|10x))
 
 
 class FontAwesomeException(Exception):
-    'Exception for unknown icon names'
+    'Exception for unknown icon name, prefix or size'
     pass
 
 
@@ -30,10 +30,14 @@ class FontAwesomePattern(Pattern):
                 style = styles[0]
                 prefix = style_to_prefix(style)
                 if not prefix:
-                    raise FontAwesomeException("unknown style {0}".format(style))
+                    message = "unknown style {0}".format(style)
+                    raise FontAwesomeException(message)
             
             elif prefix and prefix_to_style(prefix) not in styles:
-                raise FontAwesomeException("{0} have not prefix '{1}'.\nAllowed prefix is {2} ".format(icon_name, prefix, styles))
+                message = "{0} have not prefix '{1}'.\n"
+                "Allowed prefix is {2} ".format(icon_name, prefix, styles)
+                
+                raise FontAwesomeException(message)
             
             clazz = '{0} fa-{1}'.format(prefix, icon_name)
             if size:
