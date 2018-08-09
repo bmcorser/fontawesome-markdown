@@ -23,7 +23,7 @@ class PyTest(TestCommand):
 
 def readme():
     with open('README.rst') as f:
-        return f.read().decode('utf-8')
+        return f.read()
 
 setup(name='fontawesome-markdown',
       version='0.2.6',
