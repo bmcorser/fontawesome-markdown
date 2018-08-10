@@ -3,10 +3,19 @@ from markdown.extensions import Extension
 from markdown.inlinepatterns import Pattern
 from markdown.util import etree
 from .icon_list import icons
-from .styleutil import prefix_to_style, style_to_prefix
 import json
 
 fontawesome_pattern = r':(fa[bsrl]?)?\s?fa-([-\w]+)\s?(fa-(xs|sm|lg|[\d+]x|10x))?:'
+
+prefix_to_style = {
+    'fas': 'solid',
+    'fa': 'solid',
+    'fab': 'brands',
+    'far': 'regular',
+    'fal': 'light',
+}
+
+style_to_prefix = {v: k for k, v in prefix_to_style.items()}
 
 
 class FontAwesomeException(Exception):
@@ -16,6 +25,7 @@ class FontAwesomeException(Exception):
 
 class FontAwesomePattern(Pattern):
     'Markdown pattern class for matching things that look like FA icons'
+
     def handleMatch(self, m):
         el = etree.Element('i')
         prefix = m.group(2)
@@ -28,17 +38,17 @@ class FontAwesomePattern(Pattern):
                 prefix = 'fa'
             elif not prefix and 'solid' not in styles:
                 style = styles[0]
-                prefix = style_to_prefix(style)
+                prefix = style_to_prefix.get(style)
                 if not prefix:
                     message = "unknown style {0}".format(style)
                     raise FontAwesomeException(message)
-            
-            elif prefix and prefix_to_style(prefix) not in styles:
+
+            elif prefix and prefix_to_style.get(prefix) not in styles:
                 message = "{0} have not prefix '{1}'.\n"
                 "Allowed prefix is {2} ".format(icon_name, prefix, styles)
-                
+
                 raise FontAwesomeException(message)
-            
+
             clazz = '{0} fa-{1}'.format(prefix, icon_name)
             if size:
                 clazz += " " + size
@@ -50,6 +60,7 @@ class FontAwesomePattern(Pattern):
 
 class FontAwesomeExtension(Extension):
     'Pick a good spot for calling the pattern defined above'
+
     def extendMarkdown(self, md, md_globals):
         fontawesome = FontAwesomePattern(fontawesome_pattern)
         md.inlinePatterns.add('fontawesome', fontawesome, '<reference')
