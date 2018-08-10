@@ -17,10 +17,15 @@ def test_example(fa_markdown):
 
 def test_unknown_raises(fa_markdown):
     unknown_icon = 'arglebargle'
-    with pytest.raises(FontAwesomeException) as exc:
+    with pytest.raises(FontAwesomeException, match=unknown_icon) as exc:
         fa_markdown.convert("i ♥ :fa-{0}:".format(unknown_icon))
-        assert unknown_icon in exc.message
+        assert unknown_icon in exc.value.message
 
+
+def test_prefix_not_found_raises(fa_markdown):
+    with pytest.raises(FontAwesomeException, match="prefix 'fa' is not found in facebook"):
+        fa_markdown.convert("i ♥ :fa fa-facebook:")
+    
 
 def test_size(fa_markdown):
     expected_markup = '<p>i ♥ <i class="fa fa-coffee fa-xs"></i></p>'
@@ -65,4 +70,4 @@ def test_fa_icon_without_prefix(fa_markdown):
 # light style not found in icons.json...
 # def test_fal_icon_with_prefix(fa_markdown):
     # expected_markup = '<p>i ♥ <i class="fal fa-font-awesome-logo-full"></i></p>'
-    # assert fa_markdown.convert('i ♥ :fal fa-address-book:') == expected_markup
+    # assert fa_markdown.convert('i ♥ :fal fa-font-awesome-logo-full:') == expected_markup
