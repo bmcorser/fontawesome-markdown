@@ -44,15 +44,14 @@ class FontAwesomePattern(Pattern):
                     raise FontAwesomeException(message)
 
             elif prefix and prefix_to_style.get(prefix) not in styles:
-                message = "{0} have not prefix '{1}'.\n"
-                "Allowed prefix is {2} ".format(icon_name, prefix, styles)
+                message = "prefix '{0}' is not found in {1}.\n Allowed prefix is {2} ".format(prefix, icon_name, styles)
 
                 raise FontAwesomeException(message)
 
-            clazz = '{0} fa-{1}'.format(prefix, icon_name)
+            css_class = '{0} fa-{1}'.format(prefix, icon_name)
             if size:
-                clazz += " " + size
-            el.attrib = {'class': clazz}
+                css_class += " " + size
+            el.attrib = {'class': css_class}
             return el
         message = "{0} isn't a FA icon I know about".format(icon_name)
         raise FontAwesomeException(message)
