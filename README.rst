@@ -30,4 +30,4 @@ Don't forget to make the Font Awesome v5.2 assets available to your DOM, and you
 Issue
 ========
 
-* light prefix is not support now.(I can not found metadata)
+* light prefix is not supported now.(I can not find metadata)
