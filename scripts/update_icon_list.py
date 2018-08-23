@@ -11,8 +11,10 @@ URI = ('https://raw.githubusercontent.com'
 def main():
     icons_json = requests.get(URI).json()
     # use only styles
-    icons = {k: icons_json[k]['styles'] for k in icons_json.keys()}
-
+    icons = {
+        icon_name: tuple(icons_json[icon_name]['styles'])
+        for icon_name in icons_json.keys()
+    }
     with open('../fontawesome_markdown/icon_list.py', 'w') as icons_list_py:
         icons_list_py.write('from __future__ import unicode_literals\n')
         icons_list_py.write('icons = ')
