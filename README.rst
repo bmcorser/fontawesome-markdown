@@ -21,4 +21,13 @@ magic unfold:
     >>> markdown.convert('i ♥ :fa-coffee:')
     <p>i ♥ <i class="fa fa-coffee"></i></p>
 
-Don't forget to make the Font Awesome assets available to your DOM, and you're done!
+    >>> markdown.convert('i ♥ :far fa-fontawesome: fa-x3')
+    <p>i ♥ <i class="far fa-coffee fa-x3"></i></p>
+
+
+Don't forget to make the Font Awesome v5.2 assets available to your DOM, and you're done!
+
+Issue
+========
+
+* light prefix is not supported now.(I can not find metadata)
