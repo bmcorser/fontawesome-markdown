@@ -22,7 +22,7 @@ magic unfold:
     <p>i ♥ <i class="fa fa-coffee"></i></p>
 
     >>> markdown.convert('i ♥ :far fa-fontawesome: fa-x3')
-    <p>i ♥ <i class="far fa-coffee fa-x3"></i></p>
+    <p>i ♥ <i class="fa-coffee fa-3x"></i></p>
 
 
 Don't forget to make the Font Awesome v5.2 assets available to your DOM, and you're done!
