@@ -4,8 +4,8 @@ import json
 import itertools
 import pprint
 
-URI = ('https://raw.githubusercontent.com'
-       '/FortAwesome/Font-Awesome/master/advanced-options/metadata/icons.json')
+URI = ('https://github.com/FortAwesome'
+       '/Font-Awesome/blob/master/metadata/icons.json')
 
 
 def main():
