@@ -1,1 +1,6 @@
-from .main import FontAwesomePattern, FontAwesomeExtension, FontAwesomeException, makeExtension  # NOQA
+from .main import (
+    FontAwesomePattern,
+    FontAwesomeExtension,
+    FontAwesomeException,
+    makeExtension,
+)  # NOQA

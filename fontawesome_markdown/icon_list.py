@@ -9,6 +9,12 @@ icons = {
   "accusoft": [
     "brands"
   ],
+  "acquisitions-incorporated": [
+    "brands"
+  ],
+  "ad": [
+    "solid"
+  ],
   "address-book": [
     "solid",
     "regular"
@@ -23,6 +29,9 @@ icons = {
   "adn": [
     "brands"
   ],
+  "adobe": [
+    "brands"
+  ],
   "adversal": [
     "brands"
   ],
@@ -31,6 +40,9 @@ icons = {
   ],
   "air-freshener": [
     "solid"
+  ],
+  "airbnb": [
+    "brands"
   ],
   "algolia": [
     "brands"
@@ -46,6 +58,9 @@ icons = {
   ],
   "align-right": [
     "solid"
+  ],
+  "alipay": [
+    "brands"
   ],
   "allergies": [
     "solid"
@@ -107,6 +122,9 @@ icons = {
   ],
   "angular": [
     "brands"
+  ],
+  "ankh": [
+    "solid"
   ],
   "app-store": [
     "brands"
@@ -181,6 +199,9 @@ icons = {
   "arrows-alt-v": [
     "solid"
   ],
+  "artstation": [
+    "brands"
+  ],
   "assistive-listening-systems": [
     "solid"
   ],
@@ -195,6 +216,9 @@ icons = {
   ],
   "atlas": [
     "solid"
+  ],
+  "atlassian": [
+    "brands"
   ],
   "atom": [
     "solid"
@@ -220,13 +244,31 @@ icons = {
   "aws": [
     "brands"
   ],
+  "baby": [
+    "solid"
+  ],
+  "baby-carriage": [
+    "solid"
+  ],
   "backspace": [
     "solid"
   ],
   "backward": [
     "solid"
   ],
+  "bacon": [
+    "solid"
+  ],
+  "bahai": [
+    "solid"
+  ],
   "balance-scale": [
+    "solid"
+  ],
+  "balance-scale-left": [
+    "solid"
+  ],
+  "balance-scale-right": [
     "solid"
   ],
   "ban": [
@@ -268,6 +310,9 @@ icons = {
   "battery-three-quarters": [
     "solid"
   ],
+  "battle-net": [
+    "brands"
+  ],
   "bed": [
     "solid"
   ],
@@ -291,13 +336,22 @@ icons = {
   "bezier-curve": [
     "solid"
   ],
+  "bible": [
+    "solid"
+  ],
   "bicycle": [
+    "solid"
+  ],
+  "biking": [
     "solid"
   ],
   "bimobject": [
     "brands"
   ],
   "binoculars": [
+    "solid"
+  ],
+  "biohazard": [
     "solid"
   ],
   "birthday-cake": [
@@ -321,7 +375,13 @@ icons = {
   "blender": [
     "solid"
   ],
+  "blender-phone": [
+    "solid"
+  ],
   "blind": [
+    "solid"
+  ],
+  "blog": [
     "solid"
   ],
   "blogger": [
@@ -354,6 +414,12 @@ icons = {
   "book": [
     "solid"
   ],
+  "book-dead": [
+    "solid"
+  ],
+  "book-medical": [
+    "solid"
+  ],
   "book-open": [
     "solid"
   ],
@@ -363,6 +429,18 @@ icons = {
   "bookmark": [
     "solid",
     "regular"
+  ],
+  "bootstrap": [
+    "brands"
+  ],
+  "border-all": [
+    "solid"
+  ],
+  "border-none": [
+    "solid"
+  ],
+  "border-style": [
+    "solid"
   ],
   "bowling-ball": [
     "solid"
@@ -382,6 +460,9 @@ icons = {
   "brain": [
     "solid"
   ],
+  "bread-slice": [
+    "solid"
+  ],
   "briefcase": [
     "solid"
   ],
@@ -398,6 +479,9 @@ icons = {
     "solid"
   ],
   "btc": [
+    "brands"
+  ],
+  "buffer": [
     "brands"
   ],
   "bug": [
@@ -425,6 +509,12 @@ icons = {
   "bus-alt": [
     "solid"
   ],
+  "business-time": [
+    "solid"
+  ],
+  "buy-n-large": [
+    "brands"
+  ],
   "buysellads": [
     "brands"
   ],
@@ -443,6 +533,9 @@ icons = {
     "solid",
     "regular"
   ],
+  "calendar-day": [
+    "solid"
+  ],
   "calendar-minus": [
     "solid",
     "regular"
@@ -455,10 +548,22 @@ icons = {
     "solid",
     "regular"
   ],
+  "calendar-week": [
+    "solid"
+  ],
   "camera": [
     "solid"
   ],
   "camera-retro": [
+    "solid"
+  ],
+  "campground": [
+    "solid"
+  ],
+  "canadian-maple-leaf": [
+    "brands"
+  ],
+  "candy-cane": [
     "solid"
   ],
   "cannabis": [
@@ -480,6 +585,9 @@ icons = {
     "solid"
   ],
   "car-side": [
+    "solid"
+  ],
+  "caravan": [
     "solid"
   ],
   "caret-down": [
@@ -510,10 +618,19 @@ icons = {
   "caret-up": [
     "solid"
   ],
+  "carrot": [
+    "solid"
+  ],
   "cart-arrow-down": [
     "solid"
   ],
   "cart-plus": [
+    "solid"
+  ],
+  "cash-register": [
+    "solid"
+  ],
+  "cat": [
     "solid"
   ],
   "cc-amazon-pay": [
@@ -549,7 +666,13 @@ icons = {
   "centercode": [
     "brands"
   ],
+  "centos": [
+    "brands"
+  ],
   "certificate": [
+    "solid"
+  ],
+  "chair": [
     "solid"
   ],
   "chalkboard": [
@@ -587,6 +710,9 @@ icons = {
   "check-square": [
     "solid",
     "regular"
+  ],
+  "cheese": [
+    "solid"
   ],
   "chess": [
     "solid"
@@ -642,6 +768,9 @@ icons = {
   "chrome": [
     "brands"
   ],
+  "chromecast": [
+    "brands"
+  ],
   "church": [
     "solid"
   ],
@@ -650,6 +779,12 @@ icons = {
     "regular"
   ],
   "circle-notch": [
+    "solid"
+  ],
+  "city": [
+    "solid"
+  ],
+  "clinic-medical": [
     "solid"
   ],
   "clipboard": [
@@ -678,6 +813,27 @@ icons = {
     "solid"
   ],
   "cloud-download-alt": [
+    "solid"
+  ],
+  "cloud-meatball": [
+    "solid"
+  ],
+  "cloud-moon": [
+    "solid"
+  ],
+  "cloud-moon-rain": [
+    "solid"
+  ],
+  "cloud-rain": [
+    "solid"
+  ],
+  "cloud-showers-heavy": [
+    "solid"
+  ],
+  "cloud-sun": [
+    "solid"
+  ],
+  "cloud-sun-rain": [
     "solid"
   ],
   "cloud-upload-alt": [
@@ -730,9 +886,15 @@ icons = {
     "solid",
     "regular"
   ],
+  "comment-dollar": [
+    "solid"
+  ],
   "comment-dots": [
     "solid",
     "regular"
+  ],
+  "comment-medical": [
+    "solid"
   ],
   "comment-slash": [
     "solid"
@@ -740,6 +902,9 @@ icons = {
   "comments": [
     "solid",
     "regular"
+  ],
+  "comments-dollar": [
+    "solid"
   ],
   "compact-disc": [
     "solid"
@@ -751,8 +916,17 @@ icons = {
   "compress": [
     "solid"
   ],
+  "compress-alt": [
+    "solid"
+  ],
+  "compress-arrows-alt": [
+    "solid"
+  ],
   "concierge-bell": [
     "solid"
+  ],
+  "confluence": [
+    "brands"
   ],
   "connectdevelop": [
     "brands"
@@ -773,6 +947,9 @@ icons = {
   "copyright": [
     "solid",
     "regular"
+  ],
+  "cotton-bureau": [
+    "brands"
   ],
   "couch": [
     "solid"
@@ -819,14 +996,23 @@ icons = {
   "creative-commons-share": [
     "brands"
   ],
+  "creative-commons-zero": [
+    "brands"
+  ],
   "credit-card": [
     "solid",
     "regular"
+  ],
+  "critical-role": [
+    "brands"
   ],
   "crop": [
     "solid"
   ],
   "crop-alt": [
+    "solid"
+  ],
+  "cross": [
     "solid"
   ],
   "crosshairs": [
@@ -836,6 +1022,9 @@ icons = {
     "solid"
   ],
   "crown": [
+    "solid"
+  ],
+  "crutch": [
     "solid"
   ],
   "css3": [
@@ -859,6 +1048,12 @@ icons = {
   "d-and-d": [
     "brands"
   ],
+  "d-and-d-beyond": [
+    "brands"
+  ],
+  "dailymotion": [
+    "brands"
+  ],
   "dashcube": [
     "brands"
   ],
@@ -871,6 +1066,9 @@ icons = {
   "delicious": [
     "brands"
   ],
+  "democrat": [
+    "solid"
+  ],
   "deploydog": [
     "brands"
   ],
@@ -880,13 +1078,31 @@ icons = {
   "desktop": [
     "solid"
   ],
+  "dev": [
+    "brands"
+  ],
   "deviantart": [
+    "brands"
+  ],
+  "dharmachakra": [
+    "solid"
+  ],
+  "dhl": [
     "brands"
   ],
   "diagnoses": [
     "solid"
   ],
+  "diaspora": [
+    "brands"
+  ],
   "dice": [
+    "solid"
+  ],
+  "dice-d20": [
+    "solid"
+  ],
+  "dice-d6": [
     "solid"
   ],
   "dice-five": [
@@ -941,6 +1157,9 @@ icons = {
   "docker": [
     "brands"
   ],
+  "dog": [
+    "solid"
+  ],
   "dollar-sign": [
     "solid"
   ],
@@ -975,6 +1194,9 @@ icons = {
   "drafting-compass": [
     "solid"
   ],
+  "dragon": [
+    "solid"
+  ],
   "draw-polygon": [
     "solid"
   ],
@@ -993,10 +1215,22 @@ icons = {
   "drum-steelpan": [
     "solid"
   ],
+  "drumstick-bite": [
+    "solid"
+  ],
   "drupal": [
     "brands"
   ],
   "dumbbell": [
+    "solid"
+  ],
+  "dumpster": [
+    "solid"
+  ],
+  "dumpster-fire": [
+    "solid"
+  ],
+  "dungeon": [
     "solid"
   ],
   "dyalog": [
@@ -1014,6 +1248,9 @@ icons = {
   "edit": [
     "solid",
     "regular"
+  ],
+  "egg": [
+    "solid"
   ],
   "eject": [
     "solid"
@@ -1044,6 +1281,9 @@ icons = {
     "solid",
     "regular"
   ],
+  "envelope-open-text": [
+    "solid"
+  ],
   "envelope-square": [
     "solid"
   ],
@@ -1062,11 +1302,17 @@ icons = {
   "ethereum": [
     "brands"
   ],
+  "ethernet": [
+    "solid"
+  ],
   "etsy": [
     "brands"
   ],
   "euro-sign": [
     "solid"
+  ],
+  "evernote": [
+    "brands"
   ],
   "exchange-alt": [
     "solid"
@@ -1081,6 +1327,9 @@ icons = {
     "solid"
   ],
   "expand": [
+    "solid"
+  ],
+  "expand-alt": [
     "solid"
   ],
   "expand-arrows-alt": [
@@ -1118,6 +1367,12 @@ icons = {
   "facebook-square": [
     "brands"
   ],
+  "fan": [
+    "solid"
+  ],
+  "fantasy-flight-games": [
+    "brands"
+  ],
   "fast-backward": [
     "solid"
   ],
@@ -1133,11 +1388,20 @@ icons = {
   "feather-alt": [
     "solid"
   ],
+  "fedex": [
+    "brands"
+  ],
+  "fedora": [
+    "brands"
+  ],
   "female": [
     "solid"
   ],
   "fighter-jet": [
     "solid"
+  ],
+  "figma": [
+    "brands"
   ],
   "file": [
     "solid",
@@ -1160,6 +1424,9 @@ icons = {
     "regular"
   ],
   "file-contract": [
+    "solid"
+  ],
+  "file-csv": [
     "solid"
   ],
   "file-download": [
@@ -1234,10 +1501,16 @@ icons = {
   "fire": [
     "solid"
   ],
+  "fire-alt": [
+    "solid"
+  ],
   "fire-extinguisher": [
     "solid"
   ],
   "firefox": [
+    "brands"
+  ],
+  "firefox-browser": [
     "brands"
   ],
   "first-aid": [
@@ -1255,11 +1528,17 @@ icons = {
   "fish": [
     "solid"
   ],
+  "fist-raised": [
+    "solid"
+  ],
   "flag": [
     "solid",
     "regular"
   ],
   "flag-checkered": [
+    "solid"
+  ],
+  "flag-usa": [
     "solid"
   ],
   "flask": [
@@ -1282,9 +1561,15 @@ icons = {
     "solid",
     "regular"
   ],
+  "folder-minus": [
+    "solid"
+  ],
   "folder-open": [
     "solid",
     "regular"
+  ],
+  "folder-plus": [
+    "solid"
   ],
   "font": [
     "solid"
@@ -1347,6 +1632,9 @@ icons = {
   "fulcrum": [
     "brands"
   ],
+  "funnel-dollar": [
+    "solid"
+  ],
   "futbol": [
     "solid",
     "regular"
@@ -1382,10 +1670,19 @@ icons = {
   "gg-circle": [
     "brands"
   ],
+  "ghost": [
+    "solid"
+  ],
   "gift": [
     "solid"
   ],
+  "gifts": [
+    "solid"
+  ],
   "git": [
+    "brands"
+  ],
+  "git-alt": [
     "brands"
   ],
   "git-square": [
@@ -1409,10 +1706,16 @@ icons = {
   "gitter": [
     "brands"
   ],
+  "glass-cheers": [
+    "solid"
+  ],
   "glass-martini": [
     "solid"
   ],
   "glass-martini-alt": [
+    "solid"
+  ],
+  "glass-whiskey": [
     "solid"
   ],
   "glasses": [
@@ -1434,6 +1737,9 @@ icons = {
     "solid"
   ],
   "globe-asia": [
+    "solid"
+  ],
+  "globe-europe": [
     "solid"
   ],
   "gofore": [
@@ -1468,6 +1774,9 @@ icons = {
   ],
   "google-wallet": [
     "brands"
+  ],
+  "gopuram": [
+    "solid"
   ],
   "graduation-cap": [
     "solid"
@@ -1543,6 +1852,12 @@ icons = {
   "grip-horizontal": [
     "solid"
   ],
+  "grip-lines": [
+    "solid"
+  ],
+  "grip-lines-vertical": [
+    "solid"
+  ],
   "grip-vertical": [
     "solid"
   ],
@@ -1551,6 +1866,9 @@ icons = {
   ],
   "grunt": [
     "brands"
+  ],
+  "guitar": [
+    "solid"
   ],
   "gulp": [
     "brands"
@@ -1567,6 +1885,15 @@ icons = {
   "hackerrank": [
     "brands"
   ],
+  "hamburger": [
+    "solid"
+  ],
+  "hammer": [
+    "solid"
+  ],
+  "hamsa": [
+    "solid"
+  ],
   "hand-holding": [
     "solid"
   ],
@@ -1579,6 +1906,9 @@ icons = {
   "hand-lizard": [
     "solid",
     "regular"
+  ],
+  "hand-middle-finger": [
+    "solid"
   ],
   "hand-paper": [
     "solid",
@@ -1630,7 +1960,22 @@ icons = {
     "solid",
     "regular"
   ],
+  "hanukiah": [
+    "solid"
+  ],
+  "hard-hat": [
+    "solid"
+  ],
   "hashtag": [
+    "solid"
+  ],
+  "hat-cowboy": [
+    "solid"
+  ],
+  "hat-cowboy-side": [
+    "solid"
+  ],
+  "hat-wizard": [
     "solid"
   ],
   "hdd": [
@@ -1653,6 +1998,9 @@ icons = {
     "solid",
     "regular"
   ],
+  "heart-broken": [
+    "solid"
+  ],
   "heartbeat": [
     "solid"
   ],
@@ -1660,6 +2008,12 @@ icons = {
     "solid"
   ],
   "highlighter": [
+    "solid"
+  ],
+  "hiking": [
+    "solid"
+  ],
+  "hippo": [
     "solid"
   ],
   "hips": [
@@ -1674,6 +2028,9 @@ icons = {
   "hockey-puck": [
     "solid"
   ],
+  "holly-berry": [
+    "solid"
+  ],
   "home": [
     "solid"
   ],
@@ -1682,6 +2039,12 @@ icons = {
   ],
   "hornbill": [
     "brands"
+  ],
+  "horse": [
+    "solid"
+  ],
+  "horse-head": [
+    "solid"
   ],
   "hospital": [
     "solid",
@@ -1694,6 +2057,9 @@ icons = {
     "solid"
   ],
   "hot-tub": [
+    "solid"
+  ],
+  "hotdog": [
     "solid"
   ],
   "hotel": [
@@ -1715,8 +2081,14 @@ icons = {
   "hourglass-start": [
     "solid"
   ],
+  "house-damage": [
+    "solid"
+  ],
   "houzz": [
     "brands"
+  ],
+  "hryvnia": [
+    "solid"
   ],
   "html5": [
     "brands"
@@ -1725,6 +2097,15 @@ icons = {
     "brands"
   ],
   "i-cursor": [
+    "solid"
+  ],
+  "ice-cream": [
+    "solid"
+  ],
+  "icicles": [
+    "solid"
+  ],
+  "icons": [
     "solid"
   ],
   "id-badge": [
@@ -1736,6 +2117,12 @@ icons = {
     "regular"
   ],
   "id-card-alt": [
+    "solid"
+  ],
+  "ideal": [
+    "brands"
+  ],
+  "igloo": [
     "solid"
   ],
   "image": [
@@ -1770,7 +2157,16 @@ icons = {
   "instagram": [
     "brands"
   ],
+  "instagram-square": [
+    "brands"
+  ],
+  "intercom": [
+    "brands"
+  ],
   "internet-explorer": [
+    "brands"
+  ],
+  "invision": [
     "brands"
   ],
   "ioxhost": [
@@ -1778,6 +2174,9 @@ icons = {
   ],
   "italic": [
     "solid"
+  ],
+  "itch-io": [
+    "brands"
   ],
   "itunes": [
     "brands"
@@ -1788,10 +2187,16 @@ icons = {
   "java": [
     "brands"
   ],
+  "jedi": [
+    "solid"
+  ],
   "jedi-order": [
     "brands"
   ],
   "jenkins": [
+    "brands"
+  ],
+  "jira": [
     "brands"
   ],
   "joget": [
@@ -1803,6 +2208,9 @@ icons = {
   "joomla": [
     "brands"
   ],
+  "journal-whills": [
+    "solid"
+  ],
   "js": [
     "brands"
   ],
@@ -1811,6 +2219,9 @@ icons = {
   ],
   "jsfiddle": [
     "brands"
+  ],
+  "kaaba": [
+    "solid"
   ],
   "kaggle": [
     "brands"
@@ -1827,6 +2238,9 @@ icons = {
   ],
   "keycdn": [
     "brands"
+  ],
+  "khanda": [
+    "solid"
   ],
   "kickstarter": [
     "brands"
@@ -1852,6 +2266,9 @@ icons = {
   "korvue": [
     "brands"
   ],
+  "landmark": [
+    "solid"
+  ],
   "language": [
     "solid"
   ],
@@ -1859,6 +2276,9 @@ icons = {
     "solid"
   ],
   "laptop-code": [
+    "solid"
+  ],
+  "laptop-medical": [
     "solid"
   ],
   "laravel": [
@@ -1995,6 +2415,9 @@ icons = {
   "magnet": [
     "solid"
   ],
+  "mail-bulk": [
+    "solid"
+  ],
   "mailchimp": [
     "brands"
   ],
@@ -2047,10 +2470,16 @@ icons = {
   "mars-stroke-v": [
     "solid"
   ],
+  "mask": [
+    "solid"
+  ],
   "mastodon": [
     "brands"
   ],
   "maxcdn": [
+    "brands"
+  ],
+  "mdb": [
     "brands"
   ],
   "medal": [
@@ -2092,8 +2521,20 @@ icons = {
   "memory": [
     "solid"
   ],
+  "mendeley": [
+    "brands"
+  ],
+  "menorah": [
+    "solid"
+  ],
   "mercury": [
     "solid"
+  ],
+  "meteor": [
+    "solid"
+  ],
+  "microblog": [
+    "brands"
   ],
   "microchip": [
     "solid"
@@ -2126,10 +2567,16 @@ icons = {
     "solid",
     "regular"
   ],
+  "mitten": [
+    "solid"
+  ],
   "mix": [
     "brands"
   ],
   "mixcloud": [
+    "brands"
+  ],
+  "mixer": [
     "brands"
   ],
   "mizuni": [
@@ -2176,10 +2623,22 @@ icons = {
   "mortar-pestle": [
     "solid"
   ],
+  "mosque": [
+    "solid"
+  ],
   "motorcycle": [
     "solid"
   ],
+  "mountain": [
+    "solid"
+  ],
+  "mouse": [
+    "solid"
+  ],
   "mouse-pointer": [
+    "solid"
+  ],
+  "mug-hot": [
     "solid"
   ],
   "music": [
@@ -2191,6 +2650,9 @@ icons = {
   "neos": [
     "brands"
   ],
+  "network-wired": [
+    "solid"
+  ],
   "neuter": [
     "solid"
   ],
@@ -2199,9 +2661,6 @@ icons = {
     "regular"
   ],
   "nimblr": [
-    "brands"
-  ],
-  "nintendo-switch": [
     "brands"
   ],
   "node": [
@@ -2245,6 +2704,9 @@ icons = {
   "old-republic": [
     "brands"
   ],
+  "om": [
+    "solid"
+  ],
   "opencart": [
     "brands"
   ],
@@ -2257,8 +2719,14 @@ icons = {
   "optin-monster": [
     "brands"
   ],
+  "orcid": [
+    "brands"
+  ],
   "osi": [
     "brands"
+  ],
+  "otter": [
+    "solid"
   ],
   "outdent": [
     "solid"
@@ -2268,6 +2736,9 @@ icons = {
   ],
   "pagelines": [
     "brands"
+  ],
+  "pager": [
+    "solid"
   ],
   "paint-brush": [
     "solid"
@@ -2303,6 +2774,9 @@ icons = {
   "passport": [
     "solid"
   ],
+  "pastafarianism": [
+    "solid"
+  ],
   "paste": [
     "solid"
   ],
@@ -2321,6 +2795,9 @@ icons = {
   ],
   "paypal": [
     "brands"
+  ],
+  "peace": [
+    "solid"
   ],
   "pen": [
     "solid"
@@ -2343,7 +2820,13 @@ icons = {
   "pencil-ruler": [
     "solid"
   ],
+  "penny-arcade": [
+    "brands"
+  ],
   "people-carry": [
+    "solid"
+  ],
+  "pepper-hot": [
     "solid"
   ],
   "percent": [
@@ -2354,6 +2837,9 @@ icons = {
   ],
   "periscope": [
     "brands"
+  ],
+  "person-booth": [
+    "solid"
   ],
   "phabricator": [
     "brands"
@@ -2367,13 +2853,22 @@ icons = {
   "phone": [
     "solid"
   ],
+  "phone-alt": [
+    "solid"
+  ],
   "phone-slash": [
     "solid"
   ],
   "phone-square": [
     "solid"
   ],
+  "phone-square-alt": [
+    "solid"
+  ],
   "phone-volume": [
+    "solid"
+  ],
+  "photo-video": [
     "solid"
   ],
   "php": [
@@ -2391,6 +2886,9 @@ icons = {
   "pied-piper-pp": [
     "brands"
   ],
+  "pied-piper-square": [
+    "brands"
+  ],
   "piggy-bank": [
     "solid"
   ],
@@ -2405,6 +2903,12 @@ icons = {
   ],
   "pinterest-square": [
     "brands"
+  ],
+  "pizza-slice": [
+    "solid"
+  ],
+  "place-of-worship": [
+    "solid"
   ],
   "plane": [
     "solid"
@@ -2441,7 +2945,16 @@ icons = {
   "podcast": [
     "solid"
   ],
+  "poll": [
+    "solid"
+  ],
+  "poll-h": [
+    "solid"
+  ],
   "poo": [
+    "solid"
+  ],
+  "poo-storm": [
     "solid"
   ],
   "poop": [
@@ -2454,6 +2967,12 @@ icons = {
     "solid"
   ],
   "power-off": [
+    "solid"
+  ],
+  "pray": [
+    "solid"
+  ],
+  "praying-hands": [
     "solid"
   ],
   "prescription": [
@@ -2514,16 +3033,34 @@ icons = {
   "quote-right": [
     "solid"
   ],
+  "quran": [
+    "solid"
+  ],
   "r-project": [
     "brands"
   ],
+  "radiation": [
+    "solid"
+  ],
+  "radiation-alt": [
+    "solid"
+  ],
+  "rainbow": [
+    "solid"
+  ],
   "random": [
     "solid"
+  ],
+  "raspberry-pi": [
+    "brands"
   ],
   "ravelry": [
     "brands"
   ],
   "react": [
+    "brands"
+  ],
+  "reacteurope": [
     "brands"
   ],
   "readme": [
@@ -2533,6 +3070,9 @@ icons = {
     "brands"
   ],
   "receipt": [
+    "solid"
+  ],
+  "record-vinyl": [
     "solid"
   ],
   "recycle": [
@@ -2550,6 +3090,9 @@ icons = {
   "reddit-square": [
     "brands"
   ],
+  "redhat": [
+    "brands"
+  ],
   "redo": [
     "solid"
   ],
@@ -2560,8 +3103,8 @@ icons = {
     "solid",
     "regular"
   ],
-  "rendact": [
-    "brands"
+  "remove-format": [
+    "solid"
   ],
   "renren": [
     "brands"
@@ -2575,11 +3118,17 @@ icons = {
   "replyd": [
     "brands"
   ],
+  "republican": [
+    "solid"
+  ],
   "researchgate": [
     "brands"
   ],
   "resolving": [
     "brands"
+  ],
+  "restroom": [
+    "solid"
   ],
   "retweet": [
     "solid"
@@ -2588,6 +3137,9 @@ icons = {
     "brands"
   ],
   "ribbon": [
+    "solid"
+  ],
+  "ring": [
     "solid"
   ],
   "road": [
@@ -2629,6 +3181,9 @@ icons = {
   "ruler-vertical": [
     "solid"
   ],
+  "running": [
+    "solid"
+  ],
   "rupee-sign": [
     "solid"
   ],
@@ -2643,8 +3198,17 @@ icons = {
   "safari": [
     "brands"
   ],
+  "salesforce": [
+    "brands"
+  ],
   "sass": [
     "brands"
+  ],
+  "satellite": [
+    "solid"
+  ],
+  "satellite-dish": [
+    "solid"
   ],
   "save": [
     "solid",
@@ -2662,7 +3226,19 @@ icons = {
   "scribd": [
     "brands"
   ],
+  "scroll": [
+    "solid"
+  ],
+  "sd-card": [
+    "solid"
+  ],
   "search": [
+    "solid"
+  ],
+  "search-dollar": [
+    "solid"
+  ],
+  "search-location": [
     "solid"
   ],
   "search-minus": [
@@ -2723,6 +3299,9 @@ icons = {
   "shoe-prints": [
     "solid"
   ],
+  "shopify": [
+    "brands"
+  ],
   "shopping-bag": [
     "solid"
   ],
@@ -2759,6 +3338,9 @@ icons = {
   "signature": [
     "solid"
   ],
+  "sim-card": [
+    "solid"
+  ],
   "simplybuilt": [
     "brands"
   ],
@@ -2771,7 +3353,22 @@ icons = {
   "sith": [
     "brands"
   ],
+  "skating": [
+    "solid"
+  ],
+  "sketch": [
+    "brands"
+  ],
+  "skiing": [
+    "solid"
+  ],
+  "skiing-nordic": [
+    "solid"
+  ],
   "skull": [
+    "solid"
+  ],
+  "skull-crossbones": [
     "solid"
   ],
   "skyatlas": [
@@ -2785,6 +3382,12 @@ icons = {
   ],
   "slack-hash": [
     "brands"
+  ],
+  "slash": [
+    "solid"
+  ],
+  "sleigh": [
+    "solid"
   ],
   "sliders-h": [
     "solid"
@@ -2804,10 +3407,16 @@ icons = {
     "solid",
     "regular"
   ],
+  "smog": [
+    "solid"
+  ],
   "smoking": [
     "solid"
   ],
   "smoking-ban": [
+    "solid"
+  ],
+  "sms": [
     "solid"
   ],
   "snapchat": [
@@ -2819,9 +3428,21 @@ icons = {
   "snapchat-square": [
     "brands"
   ],
+  "snowboarding": [
+    "solid"
+  ],
   "snowflake": [
     "solid",
     "regular"
+  ],
+  "snowman": [
+    "solid"
+  ],
+  "snowplow": [
+    "solid"
+  ],
+  "socks": [
+    "solid"
   ],
   "solar-panel": [
     "solid"
@@ -2832,13 +3453,25 @@ icons = {
   "sort-alpha-down": [
     "solid"
   ],
+  "sort-alpha-down-alt": [
+    "solid"
+  ],
   "sort-alpha-up": [
+    "solid"
+  ],
+  "sort-alpha-up-alt": [
     "solid"
   ],
   "sort-amount-down": [
     "solid"
   ],
+  "sort-amount-down-alt": [
+    "solid"
+  ],
   "sort-amount-up": [
+    "solid"
+  ],
+  "sort-amount-up-alt": [
     "solid"
   ],
   "sort-down": [
@@ -2847,13 +3480,22 @@ icons = {
   "sort-numeric-down": [
     "solid"
   ],
+  "sort-numeric-down-alt": [
+    "solid"
+  ],
   "sort-numeric-up": [
+    "solid"
+  ],
+  "sort-numeric-up-alt": [
     "solid"
   ],
   "sort-up": [
     "solid"
   ],
   "soundcloud": [
+    "brands"
+  ],
+  "sourcetree": [
     "brands"
   ],
   "spa": [
@@ -2864,6 +3506,15 @@ icons = {
   ],
   "speakap": [
     "brands"
+  ],
+  "speaker-deck": [
+    "brands"
+  ],
+  "spell-check": [
+    "solid"
+  ],
+  "spider": [
+    "solid"
   ],
   "spinner": [
     "solid"
@@ -2884,6 +3535,9 @@ icons = {
   "square-full": [
     "solid"
   ],
+  "square-root-alt": [
+    "solid"
+  ],
   "squarespace": [
     "brands"
   ],
@@ -2893,6 +3547,9 @@ icons = {
   "stack-overflow": [
     "brands"
   ],
+  "stackpath": [
+    "brands"
+  ],
   "stamp": [
     "solid"
   ],
@@ -2900,11 +3557,17 @@ icons = {
     "solid",
     "regular"
   ],
+  "star-and-crescent": [
+    "solid"
+  ],
   "star-half": [
     "solid",
     "regular"
   ],
   "star-half-alt": [
+    "solid"
+  ],
+  "star-of-david": [
     "solid"
   ],
   "star-of-life": [
@@ -3013,13 +3676,25 @@ icons = {
     "solid",
     "regular"
   ],
+  "suse": [
+    "brands"
+  ],
   "swatchbook": [
     "solid"
+  ],
+  "swift": [
+    "brands"
   ],
   "swimmer": [
     "solid"
   ],
   "swimming-pool": [
+    "solid"
+  ],
+  "symfony": [
+    "brands"
+  ],
+  "synagogue": [
     "solid"
   ],
   "sync": [
@@ -3079,8 +3754,17 @@ icons = {
   "telegram-plane": [
     "brands"
   ],
+  "temperature-high": [
+    "solid"
+  ],
+  "temperature-low": [
+    "solid"
+  ],
   "tencent-weibo": [
     "brands"
+  ],
+  "tenge": [
+    "solid"
   ],
   "terminal": [
     "solid"
@@ -3099,6 +3783,9 @@ icons = {
   ],
   "th-list": [
     "solid"
+  ],
+  "the-red-yeti": [
+    "brands"
   ],
   "theater-masks": [
     "solid"
@@ -3126,6 +3813,9 @@ icons = {
   ],
   "thermometer-three-quarters": [
     "solid"
+  ],
+  "think-peaks": [
+    "brands"
   ],
   "thumbs-down": [
     "solid",
@@ -3164,10 +3854,28 @@ icons = {
   "toggle-on": [
     "solid"
   ],
+  "toilet": [
+    "solid"
+  ],
+  "toilet-paper": [
+    "solid"
+  ],
   "toolbox": [
     "solid"
   ],
+  "tools": [
+    "solid"
+  ],
   "tooth": [
+    "solid"
+  ],
+  "torah": [
+    "solid"
+  ],
+  "torii-gate": [
+    "solid"
+  ],
+  "tractor": [
     "solid"
   ],
   "trade-federation": [
@@ -3179,7 +3887,13 @@ icons = {
   "traffic-light": [
     "solid"
   ],
+  "trailer": [
+    "solid"
+  ],
   "train": [
+    "solid"
+  ],
+  "tram": [
     "solid"
   ],
   "transgender": [
@@ -3194,6 +3908,12 @@ icons = {
   "trash-alt": [
     "solid",
     "regular"
+  ],
+  "trash-restore": [
+    "solid"
+  ],
+  "trash-restore-alt": [
+    "solid"
   ],
   "tree": [
     "solid"
@@ -3252,7 +3972,13 @@ icons = {
   "uber": [
     "brands"
   ],
+  "ubuntu": [
+    "brands"
+  ],
   "uikit": [
+    "brands"
+  ],
+  "umbraco": [
     "brands"
   ],
   "umbrella": [
@@ -3271,6 +3997,9 @@ icons = {
     "solid"
   ],
   "uniregistry": [
+    "brands"
+  ],
+  "unity": [
     "brands"
   ],
   "universal-access": [
@@ -3293,6 +4022,9 @@ icons = {
   ],
   "upload": [
     "solid"
+  ],
+  "ups": [
+    "brands"
   ],
   "usb": [
     "brands"
@@ -3332,6 +4064,9 @@ icons = {
   "user-graduate": [
     "solid"
   ],
+  "user-injured": [
+    "solid"
+  ],
   "user-lock": [
     "solid"
   ],
@@ -3342,6 +4077,9 @@ icons = {
     "solid"
   ],
   "user-ninja": [
+    "solid"
+  ],
+  "user-nurse": [
     "solid"
   ],
   "user-plus": [
@@ -3370,6 +4108,9 @@ icons = {
   ],
   "users-cog": [
     "solid"
+  ],
+  "usps": [
+    "brands"
   ],
   "ussunnah": [
     "brands"
@@ -3419,6 +4160,9 @@ icons = {
   "video-slash": [
     "solid"
   ],
+  "vihara": [
+    "solid"
+  ],
   "vimeo": [
     "brands"
   ],
@@ -3437,16 +4181,28 @@ icons = {
   "vnv": [
     "brands"
   ],
+  "voicemail": [
+    "solid"
+  ],
   "volleyball-ball": [
     "solid"
   ],
   "volume-down": [
     "solid"
   ],
+  "volume-mute": [
+    "solid"
+  ],
   "volume-off": [
     "solid"
   ],
   "volume-up": [
+    "solid"
+  ],
+  "vote-yea": [
+    "solid"
+  ],
+  "vr-cardboard": [
     "solid"
   ],
   "vuejs": [
@@ -3460,6 +4216,15 @@ icons = {
   ],
   "warehouse": [
     "solid"
+  ],
+  "water": [
+    "solid"
+  ],
+  "wave-square": [
+    "solid"
+  ],
+  "waze": [
+    "brands"
   ],
   "weebly": [
     "brands"
@@ -3494,6 +4259,9 @@ icons = {
   "wikipedia-w": [
     "brands"
   ],
+  "wind": [
+    "solid"
+  ],
   "window-close": [
     "solid",
     "regular"
@@ -3513,6 +4281,9 @@ icons = {
   "windows": [
     "brands"
   ],
+  "wine-bottle": [
+    "solid"
+  ],
   "wine-glass": [
     "solid"
   ],
@@ -3520,6 +4291,9 @@ icons = {
     "solid"
   ],
   "wix": [
+    "brands"
+  ],
+  "wizards-of-the-coast": [
     "brands"
   ],
   "wolf-pack-battalion": [
@@ -3543,6 +4317,9 @@ icons = {
   "wpforms": [
     "brands"
   ],
+  "wpressr": [
+    "brands"
+  ],
   "wrench": [
     "solid"
   ],
@@ -3564,16 +4341,25 @@ icons = {
   "yahoo": [
     "brands"
   ],
+  "yammer": [
+    "brands"
+  ],
   "yandex": [
     "brands"
   ],
   "yandex-international": [
     "brands"
   ],
+  "yarn": [
+    "brands"
+  ],
   "yelp": [
     "brands"
   ],
   "yen-sign": [
+    "solid"
+  ],
+  "yin-yang": [
     "solid"
   ],
   "yoast": [
