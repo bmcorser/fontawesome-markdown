@@ -13,7 +13,7 @@ def main():
     # use only styles
     icons = {
         icon_name: tuple(icons_json[icon_name]['styles'])
-        for icon_name in icons_json.keys()
+        for icon_name in list(icons_json.keys())
     }
     with open('../fontawesome_markdown/icon_list.py', 'w') as icons_list_py:
         icons_list_py.write('from __future__ import unicode_literals\n')
