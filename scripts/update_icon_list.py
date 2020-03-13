@@ -4,8 +4,8 @@ import json
 import itertools
 import pprint
 
-URI = ('https://raw.githubusercontent.com'
-       '/FortAwesome/Font-Awesome/master/advanced-options/metadata/icons.json')
+URI = ('https://github.com/FortAwesome'
+       '/Font-Awesome/blob/master/metadata/icons.json')
 
 
 def main():
@@ -13,7 +13,7 @@ def main():
     # use only styles
     icons = {
         icon_name: tuple(icons_json[icon_name]['styles'])
-        for icon_name in icons_json.keys()
+        for icon_name in list(icons_json.keys())
     }
     with open('../fontawesome_markdown/icon_list.py', 'w') as icons_list_py:
         icons_list_py.write('from __future__ import unicode_literals\n')
