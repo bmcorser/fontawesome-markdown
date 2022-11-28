@@ -1,7 +1,7 @@
 from __future__ import unicode_literals
 from markdown.extensions import Extension
-from markdown.inlinepatterns import Pattern
-from markdown.util import etree
+from markdown.inlinepatterns import InlineProcessor
+import xml.etree.ElementTree as etree
 from .icon_list import icons
 import json
 
@@ -23,14 +23,14 @@ class FontAwesomeException(Exception):
     pass
 
 
-class FontAwesomePattern(Pattern):
+class FontAwesomePattern(InlineProcessor):
     'Markdown pattern class for matching things that look like FA icons'
 
-    def handleMatch(self, m):
+    def handleMatch(self, match, data):
         el = etree.Element('i')
-        prefix = m.group(2)
-        icon_name = m.group(3)
-        size = m.group(4)
+        prefix = match.group(1)
+        icon_name = match.group(2)
+        size = match.group(3)
         if icon_name in icons:
             styles = icons[icon_name]
             if not prefix and 'solid' in styles:
@@ -52,7 +52,7 @@ class FontAwesomePattern(Pattern):
             if size:
                 css_class += " " + size
             el.attrib = {'class': css_class}
-            return el
+            return el, match.start(0), match.end(0)
         message = "{0} isn't a FA icon I know about".format(icon_name)
         raise FontAwesomeException(message)
 
@@ -60,9 +60,9 @@ class FontAwesomePattern(Pattern):
 class FontAwesomeExtension(Extension):
     'Pick a good spot for calling the pattern defined above'
 
-    def extendMarkdown(self, md, md_globals):
+    def extendMarkdown(self, md):
         fontawesome = FontAwesomePattern(fontawesome_pattern)
-        md.inlinePatterns.add('fontawesome', fontawesome, '<reference')
+        md.inlinePatterns.register(fontawesome, 'fontawesome', 175)
 
 
 def makeExtension(*args, **kwargs):
