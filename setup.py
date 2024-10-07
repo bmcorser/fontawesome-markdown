@@ -1,45 +1,37 @@
 import sys
 from setuptools import setup
-from setuptools.command.test import test as TestCommand
-
-
-class PyTest(TestCommand):
-    user_options = [('pytest-args=', 'a', "Arguments to pass to py.test")]
-
-    def initialize_options(self):
-        TestCommand.initialize_options(self)
-        self.pytest_args = []
-
-    def finalize_options(self):
-        TestCommand.finalize_options(self)
-        self.test_args = []
-        self.test_suite = True
-
-    def run_tests(self):
-        import pytest
-        errno = pytest.main(self.pytest_args)
-        sys.exit(errno)
-
 
 def readme():
-    with open('README.rst') as f:
+    with open('README.md') as f:
         return f.read()
 
-setup(name='fontawesome-markdown',
-      version='0.5.0',
-      description='Font Awesome support for Markdown',
-      long_description=readme(),
-      url='http://bmcorser.github.com/fontawesome-markdown',
-      author='bmcorser',
-      author_email='bmcorser@gmail.com',
-      license='GPL',
-      packages=['fontawesome_markdown'],
-      install_requires=['markdown'],
-      tests_require=['pytest'],
-      cmdclass={'test': PyTest},
-      zip_safe=False,
-      classifiers=[
-          'Programming Language :: Python :: 2.7',
-          'Programming Language :: Python :: 3.2',
-          'Programming Language :: Python :: 3.4',
-      ])
+setup(
+    name='fontawesome-in-markdown',
+    version='0.1.1',
+    description='Markdown extension to include FontAwesome icons with ease.',
+    long_description=readme(),
+    long_description_content_type='text/markdown',
+    url='http://stickgrinder.github.com/fontawesome-in-markdown',
+    author='StickGrinder',
+    author_email='stickgrinder@gmail.com',
+    license='GPL-3.0',
+    packages=['fontawesome_in_markdown'],
+    package_dir={'fontawesome_in_markdown': 'src/fontawesome_in_markdown'},
+    install_requires=['markdown'],
+    tests_require=['pytest'],
+    setup_requires=['pytest-runner'],
+    test_suite='tests',
+    zip_safe=False,
+    classifiers=[
+        'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9',
+        'Programming Language :: Python :: 3.10',
+        'Programming Language :: Python :: 3.11',
+        'Programming Language :: Python :: 3.12',
+        'License :: OSI Approved :: GNU General Public License v3 (GPLv3)',
+        'Operating System :: OS Independent',
+    ],
+    python_requires='>=3.6',
+)

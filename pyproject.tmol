@@ -1,0 +1,25 @@
+[project]
+name = "fontawesome-in-markdown"
+version = "0.1.1"
+authors = [
+  { name="StickGrinder", email="stickgrinder@gmail.com" },
+]
+description = "Markdown extension to include FontAwesome icons with ease."
+readme = "README.md"
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GPL-3.0",
+    "Operating System :: OS Independent",
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.urls]
+Homepage = "https://github.com/stickgrinder/fontawesome-in-markdown"
+Issues = "https://github.com/stickgrinder/fontawesome-in-markdown/issues"
